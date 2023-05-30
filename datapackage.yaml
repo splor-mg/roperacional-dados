@@ -1,7 +1,16 @@
- resources:
+resources:
   - name: alteracoes-orcamentarias
     type: table
-    path: [alteracoes_orcamentarias_2017.xlsx, alteracoes_orcamentarias_2018.xlsx, alteracoes_orcamentarias_2019.xlsx, alteracoes_orcamentarias_2020.xlsx, alteracoes_orcamentarias_2021.xlsx, alteracoes_orcamentarias_2022.xlsx, alteracoes_orcamentarias_2023.xlsx] 
+    path:
+      [
+        alteracoes_orcamentarias_2017.xlsx,
+        alteracoes_orcamentarias_2018.xlsx,
+        alteracoes_orcamentarias_2019.xlsx,
+        alteracoes_orcamentarias_2020.xlsx,
+        alteracoes_orcamentarias_2021.xlsx,
+        alteracoes_orcamentarias_2022.xlsx,
+        alteracoes_orcamentarias_2023.xlsx,
+      ]
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -9,73 +18,81 @@
     schema:
       fields:
         - name: ANO
-          title: 'Ano de exercício'
-          description: 'Ano de exercício da execução orçamentária'
+          title: "Ano de exercício"
+          description: "Ano de exercício da execução orçamentária"
           type: integer
         - name: DATA_PUBLICACAO
-          title: 'Data de publicação do decreto'
-          description: 'Data de publicação do decreto de alteração orçamentária no Diário Oficial'
+          title: "Data de publicação do decreto"
+          description: "Data de publicação do decreto de alteração orçamentária no Diário Oficial"
           type: datetime
         - name: DATA_REGISTRO
           type: datetime
-          title: 'Data de registro do decreto'
-          description: 'Data de registro do decreto de alteração orçamentária no sistema SIAFI'
+          title: "Data de registro do decreto"
+          description: "Data de registro do decreto de alteração orçamentária no sistema SIAFI"
         - name: UO_COD
-          title: 'Código da Unidade Orçamentária'
-          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          title: "Código da Unidade Orçamentária"
+          description: "Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento"
           type: integer
         - name: ACAO_COD
-          title: 'Código da Ação (Projeto/Atividade)'
-          description: 'Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário'
+          title: "Código da Ação (Projeto/Atividade)"
+          description: "Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário"
           type: integer
         - name: Lei Aprovação Orçamento
-          title: 'Lei autorizativa'
-          description: 'Lei autorizativa do decreto de alteração orçamentária'
+          title: "Lei autorizativa"
+          description: "Lei autorizativa do decreto de alteração orçamentária"
           type: integer
         - name: DECRETO
-          title: 'Decreto de alteração orçamentária'
-          description: 'Número do decreto de alteração orçamentária elaborado'
+          title: "Decreto de alteração orçamentária"
+          description: "Número do decreto de alteração orçamentária elaborado"
           type: integer
         - name: ORIGEM_CREDITO
-          title: 'Código da origem do crédito'
-          description: 'Detalha os possível tipos de alteração orçamentária (remanejamento, superávit financeiro ou excesso de arrecadação), com informações a respeito da fonte de recursos e/ou uso do recurso'
+          title: "Código da origem do crédito"
+          description: "Detalha os possível tipos de alteração orçamentária (remanejamento, superávit financeiro ou excesso de arrecadação), com informações a respeito da fonte de recursos e/ou uso do recurso"
           type: integer
         - name: ORIGEM_CREDITO_DESC
-          title: 'Descrição da origem do crédito'
-          description: 'Detalha os possíveis tipos de alteração orçamentária (remanejamento, superávit financeiro ou excesso de arrecadação), com informações a respeito da fonte de recursos e/ou uso do recurso'
+          title: "Descrição da origem do crédito"
+          description: "Detalha os possíveis tipos de alteração orçamentária (remanejamento, superávit financeiro ou excesso de arrecadação), com informações a respeito da fonte de recursos e/ou uso do recurso"
           type: string
         - name: GRUPO_COD
           type: integer
-          title: 'Código do Grupo de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Grupo de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: MODALIDADE
-          title: 'Código da Modalidade de Aplicação'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Modalidade de Aplicação"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: IAG_COD
           type: integer
-          title: 'Código do Identificador de Ação Governamental'
-          description: 'Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações'
+          title: "Código do Identificador de Ação Governamental"
+          description: "Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações"
         - name: FONTE_COD
-          title: 'Código da Fonte de recursos'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Fonte de recursos"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: IPU_COD
-          title: 'Código do Identificador de Procedência e Uso'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Identificador de Procedência e Uso"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: SUPLEMENTACAO
-          title: 'Valor da suplementação'
-          description: 'Valor em reais suplementado pelo decreto de alteração orçamentária'
+          title: "Valor da suplementação"
+          description: "Valor em reais suplementado pelo decreto de alteração orçamentária"
           type: number
         - name: ANULACAO
           type: integer
-          title: 'Valor da anulação'
-          description: 'Valor da anulação no decreto de alteração orçamentária'
+          title: "Valor da anulação"
+          description: "Valor da anulação no decreto de alteração orçamentária"
   - name: cota-item-data
     type: table
-    path: [cota-item-data_2017.xlsx, cota-item-data_2018.xlsx, cota-item-data_2019.xlsx, cota-item-data_2020.xlsx,
-     cota-item-data_2021.xlsx, cota-item-data_2022.xlsx, cota-item-data_2023.xlsx]
+    path:
+      [
+        cota-item-data_2017.xlsx,
+        cota-item-data_2018.xlsx,
+        cota-item-data_2019.xlsx,
+        cota-item-data_2020.xlsx,
+        cota-item-data_2021.xlsx,
+        cota-item-data_2022.xlsx,
+        cota-item-data_2023.xlsx,
+      ]
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -83,53 +100,62 @@
     schema:
       fields:
         - name: Ano de Exercício
-          title: 'Ano de exercício'
-          description: 'Ano de exercício da execução orçamentária'
+          title: "Ano de exercício"
+          description: "Ano de exercício da execução orçamentária"
           type: integer
         - name: Data
-          title: 'Data de registro da cota orçamentária'
+          title: "Data de registro da cota orçamentária"
           type: datetime
         - name: Documento Aprovação Cota
-          description: 'Número do documento criado no SIAFI quando do registro da cota orçamentária no sistema'
+          description: "Número do documento criado no SIAFI quando do registro da cota orçamentária no sistema"
           type: integer
         - name: UO_COD
-          title: 'Código da Unidade Orçamentária'
-          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          title: "Código da Unidade Orçamentária"
+          description: "Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento"
           type: integer
         - name: GRUPO_COD
           type: integer
-          title: 'Código do Grupo de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Grupo de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IAG_COD
           type: integer
-          title: 'Código do Identificador de Ação Governamental'
-          description: 'Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações'
+          title: "Código do Identificador de Ação Governamental"
+          description: "Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações"
         - name: FONTE_COD
           type: integer
-          title: 'Código da Fonte de recursos'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Fonte de recursos"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IPU_COD
-          title: 'Código do Identificador de Procedência e Uso'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Identificador de Procedência e Uso"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: ACAO_COD
-          title: 'Código da Ação (Projeto/Atividade)'
-          description: 'Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário'
+          title: "Código da Ação (Projeto/Atividade)"
+          description: "Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário"
           type: integer
         - name: ELEMENTO_ITEM_COD
-          title: 'Código do Elemento Item de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Elemento Item de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: Operador - Registro
-          title: 'Responsável pelo registro da cota orçamentária no sistema SIAFI'
-          description: 'Matrícula (MASP) do responsável pelo registro da cota orçamentária no sistema SIAFI'
+          title: "Responsável pelo registro da cota orçamentária no sistema SIAFI"
+          description: "Matrícula (MASP) do responsável pelo registro da cota orçamentária no sistema SIAFI"
           type: string
         - name: COTA APROVADA LIQUIDA
-          description: 'Valor líquido em reais resultante da expressão valor da cota aprovada - valor anulação da cota aprovada'
+          description: "Valor líquido em reais resultante da expressão valor da cota aprovada - valor anulação da cota aprovada"
           type: number
   - name: credito-inicial-autorizado
     type: table
-    path: [credito-inicial-autorizado_2014-2017.xlsx, credito-inicial-autorizado_2018.xlsx, credito-inicial-autorizado_2019.xlsx, credito-inicial-autorizado_2020.xlsx, credito-inicial-autorizado_2021.xlsx, credito-inicial-autorizado_2022.xlsx, credito-inicial-autorizado_2023.xlsx] 
+    path:
+      [
+        credito-inicial-autorizado_2014-2017.xlsx,
+        credito-inicial-autorizado_2018.xlsx,
+        credito-inicial-autorizado_2019.xlsx,
+        credito-inicial-autorizado_2020.xlsx,
+        credito-inicial-autorizado_2021.xlsx,
+        credito-inicial-autorizado_2022.xlsx,
+        credito-inicial-autorizado_2023.xlsx,
+      ]
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -137,74 +163,80 @@
     schema:
       fields:
         - name: ANO
-          title: 'Ano de exercício'
-          description: 'Ano de exercício da execução orçamentária'
+          title: "Ano de exercício"
+          description: "Ano de exercício da execução orçamentária"
           type: integer
         - name: UO_COD
-          title: 'Código da Unidade Orçamentária'
-          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          title: "Código da Unidade Orçamentária"
+          description: "Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento"
           type: integer
         - name: PROGRAMA_COD
-          title: 'Código do Programa'
-          description: 'Pertencente à classificação funcional-programática do orçamento'
+          title: "Código do Programa"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: integer
         - name: PROGRAMA_DESC
-          title: 'Descrição do programa'
-          description: 'Pertencente à classificação funcional-programática do orçamento'
+          title: "Descrição do programa"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: string
         - name: ACAO_COD
-          title: 'Código da Ação (Projeto/Atividade)'
-          description: 'Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário'
+          title: "Código da Ação (Projeto/Atividade)"
+          description: "Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário"
           type: integer
         - name: ACAO_DESC
-          title: 'Descrição da Ação (Projeto/Atividade)'
-          description: 'Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário'
+          title: "Descrição da Ação (Projeto/Atividade)"
+          description: "Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário"
           type: string
         - name: GRUPO_COD
           type: integer
-          title: 'Código do Grupo de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Grupo de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: MODALIDADE_COD
           type: integer
-          title: 'Código da Modalidade de Aplicação'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Modalidade de Aplicação"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IAG_COD
           type: integer
-          title: 'Código do Identificador de Ação Governamental'
-          description: 'Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações'
+          title: "Código do Identificador de Ação Governamental"
+          description: "Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações"
         - name: FUNCAO_COD
-          title: 'Código da Função'
-          description: 'Pertencente à classificação funcional-programática do orçamento'   
+          title: "Código da Função"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: integer
         - name: FUNCAO_DESC
-          title: 'Descrição da Função'
-          description: 'Pertencente à classificação funcional-programática do orçamento'
+          title: "Descrição da Função"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: string
         - name: SUBFUNCAO_COD
-          title: 'Código da Subfunção'
-          description: 'Pertencente à classificação funcional-programática do orçamento'   
+          title: "Código da Subfunção"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: integer
         - name: SUBFUNCAO_DESC
-          title: 'Descrição da Subfunção'
-          description: 'Pertencente à classificação funcional-programática do orçamento'
+          title: "Descrição da Subfunção"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: string
         - name: FONTE_COD
           type: integer
-          title: 'Código da Fonte de recursos'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Fonte de recursos"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IPU_COD
-          title: 'Código do Identificador de Procedência e Uso'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Identificador de Procedência e Uso"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: CREDITO_INICIAL
-          description: 'Valor em reais do crédito aprovado pela Lei Orçamentária Anual'
+          description: "Valor em reais do crédito aprovado pela Lei Orçamentária Anual"
           type: integer
         - name: CREDITO_AUTORIZADO
-          type: number 
-          description: 'Valor em reais correspondente ao crédito inicial + alterações orçamentárias ao longo do exercício'
+          type: number
+          description: "Valor em reais correspondente ao crédito inicial + alterações orçamentárias ao longo do exercício"
   - name: execucao-itens-materiais
     type: table
-    path: [execucao-itens-materiais_2017.xlsx, execucao-itens-materiais_2018.xlsx, execucao-itens-materiais_2019-2020.xlsx, execucao-itens-materiais_2021-2022.xlsx] 
+    path:
+      [
+        execucao-itens-materiais_2017.xlsx,
+        execucao-itens-materiais_2018.xlsx,
+        execucao-itens-materiais_2019-2020.xlsx,
+        execucao-itens-materiais_2021-2022.xlsx,
+      ]
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -212,75 +244,154 @@
     schema:
       fields:
         - name: ANO
-          title: 'Ano de exercício'
-          description: 'Ano de exercício da execução orçamentária'
+          title: "Ano de exercício"
+          description: "Ano de exercício da execução orçamentária"
           type: integer
         - name: UO_COD
-          title: 'Código da Unidade Orçamentária'
-          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          title: "Código da Unidade Orçamentária"
+          description: "Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento"
           type: integer
         - name: ACAO_COD
-          title: 'Código da Ação (Projeto/Atividade)'
-          description: 'Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário'
+          title: "Código da Ação (Projeto/Atividade)"
+          description: "Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário"
           type: integer
         - name: GRUPO_COD
           type: integer
-          title: 'Código do Grupo de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Grupo de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IAG_COD
           type: integer
-          title: 'Código do Identificador de Ação Governamental'
-          description: 'Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações'
+          title: "Código do Identificador de Ação Governamental"
+          description: "Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações"
         - name: FONTE_COD
           type: integer
-          title: 'Código da Fonte de recursos'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Fonte de recursos"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IPU_COD
-          title: 'Código do Identificador de Procedência e Uso'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Identificador de Procedência e Uso"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: CONTRATO_NUMERO
           type: integer
-          title: 'Número do contrato'
-          description: 'Número atribuído pelo sistema SIAFI a contrato/convênio de saída'
+          title: "Número do contrato"
+          description: "Número atribuído pelo sistema SIAFI a contrato/convênio de saída"
         - name: CREDOR_CNPJ_CPF
-          title: 'CNPJ ou CPF formatado'
-          description: 'CNPJ ou CPF do credor da despesa'
+          title: "CNPJ ou CPF formatado"
+          description: "CNPJ ou CPF do credor da despesa"
           type: string
         - name: ELEMENTO_ITEM_COD
-          title: 'Código do Elemento Item de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Elemento Item de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: MATERIAL/SERVICO COD
           type: string
-          title: 'Código númerico do material/serviço no catálogo do SIAD' 
+          title: "Código númerico do material/serviço no catálogo do SIAD"
         - name: MATERIAL/SERVICO DESC
           type: string
-          title: 'Especificação do material/serviço no catálogo do SIAD'
+          title: "Especificação do material/serviço no catálogo do SIAD"
         - name: ITEM_MATERIAL_SERVICO_COD
           type: integer
-          title: 'Código númerico do item de material/serviço no catálogo do SIAD' 
+          title: "Código númerico do item de material/serviço no catálogo do SIAD"
         - name: TIPO_MATERIAL_SERVICO
           type: string
-          title: 'Especificação se item se refere a material ou serviço'
+          title: "Especificação se item se refere a material ou serviço"
         - name: ITEM_MATERIAL_SERVICO_DESC
           type: string
-          title: 'Especificação do item de material/serviço no catálogo do SIAD'
+          title: "Especificação do item de material/serviço no catálogo do SIAD"
         - name: QTDE_EMP
           type: number
-          title: 'Saldo da quantidade empenhada do material/serviço'
+          title: "Saldo da quantidade empenhada do material/serviço"
         - name: QTDE_LIQ
           type: number
-          title: 'Saldo da quantidade liquidada do material/serviço'
+          title: "Saldo da quantidade liquidada do material/serviço"
         - name: DESPESA_EMP
           type: number
-          title: 'Saldo do valor empenhado do material/serviço'
+          title: "Saldo do valor empenhado do material/serviço"
         - name: DESPESA_LIQ
           type: number
-          title: 'Saldo do valor liquidado do material/serviço'
+          title: "Saldo do valor liquidado do material/serviço"
   - name: execucao
     type: table
-    path: [execucao_2017-01.xlsx, execucao_2017-02.xlsx, execucao_2017-03.xlsx, execucao_2017-04.xlsx, execucao_2017-05.xlsx, execucao_2017-06.xlsx, execucao_2017-07.xlsx, execucao_2017-08.xlsx, execucao_2017-09.xlsx, execucao_2017-10.xlsx, execucao_2017-11.xlsx, execucao_2017-12.xlsx, execucao_2018-01.xlsx, execucao_2018-02.xlsx, execucao_2018-03.xlsx, execucao_2018-04.xlsx, execucao_2018-05.xlsx, execucao_2018-06.xlsx, execucao_2018-07.xlsx, execucao_2018-08.xlsx, execucao_2018-09.xlsx, execucao_2018-10.xlsx, execucao_2018-11.xlsx, execucao_2018-12.xlsx, execucao_2019-01.xlsx, execucao_2019-02.xlsx, execucao_2019-03.xlsx, execucao_2019-04.xlsx, execucao_2019-05.xlsx, execucao_2019-06.xlsx, execucao_2019-07.xlsx, execucao_2019-08.xlsx, execucao_2019-09.xlsx, execucao_2019-10.xlsx, execucao_2019-11.xlsx, execucao_2019-12.xlsx, execucao_2020-01.xlsx, execucao_2020-02.xlsx, execucao_2020-03.xlsx, execucao_2020-04.xlsx, execucao_2020-05.xlsx, execucao_2020-06.xlsx, execucao_2020-07.xlsx, execucao_2020-08.xlsx, execucao_2020-09.xlsx, execucao_2020-10.xlsx, execucao_2020-11.xlsx, execucao_2020-12.xlsx, execucao_2021-01.xlsx, execucao_2021-02.xlsx, execucao_2021-03.xlsx, execucao_2021-04.xlsx, execucao_2021-05.xlsx, execucao_2021-06.xlsx, execucao_2021-07.xlsx, execucao_2021-08.xlsx, execucao_2021-09.xlsx, execucao_2021-10.xlsx, execucao_2021-11.xlsx, execucao_2021-12.xlsx, execucao_2022-01.xlsx, execucao_2022-02.xlsx, execucao_2022-03.xlsx, execucao_2022-04.xlsx, execucao_2022-05.xlsx, execucao_2022-06.xlsx, execucao_2022-07.xlsx, execucao_2022-08.xlsx, execucao_2022-09.xlsx, execucao_2022-10.xlsx, execucao_2022-11.xlsx, execucao_2022-12.xlsx, execucao_2023-01.xlsx, execucao_2023-02.xlsx, execucao_2023-03.xlsx, execucao_2023-04.xlsx, execucao_2023-05.xlsx]
+    path:
+      [
+        execucao_2017-01.xlsx,
+        execucao_2017-02.xlsx,
+        execucao_2017-03.xlsx,
+        execucao_2017-04.xlsx,
+        execucao_2017-05.xlsx,
+        execucao_2017-06.xlsx,
+        execucao_2017-07.xlsx,
+        execucao_2017-08.xlsx,
+        execucao_2017-09.xlsx,
+        execucao_2017-10.xlsx,
+        execucao_2017-11.xlsx,
+        execucao_2017-12.xlsx,
+        execucao_2018-01.xlsx,
+        execucao_2018-02.xlsx,
+        execucao_2018-03.xlsx,
+        execucao_2018-04.xlsx,
+        execucao_2018-05.xlsx,
+        execucao_2018-06.xlsx,
+        execucao_2018-07.xlsx,
+        execucao_2018-08.xlsx,
+        execucao_2018-09.xlsx,
+        execucao_2018-10.xlsx,
+        execucao_2018-11.xlsx,
+        execucao_2018-12.xlsx,
+        execucao_2019-01.xlsx,
+        execucao_2019-02.xlsx,
+        execucao_2019-03.xlsx,
+        execucao_2019-04.xlsx,
+        execucao_2019-05.xlsx,
+        execucao_2019-06.xlsx,
+        execucao_2019-07.xlsx,
+        execucao_2019-08.xlsx,
+        execucao_2019-09.xlsx,
+        execucao_2019-10.xlsx,
+        execucao_2019-11.xlsx,
+        execucao_2019-12.xlsx,
+        execucao_2020-01.xlsx,
+        execucao_2020-02.xlsx,
+        execucao_2020-03.xlsx,
+        execucao_2020-04.xlsx,
+        execucao_2020-05.xlsx,
+        execucao_2020-06.xlsx,
+        execucao_2020-07.xlsx,
+        execucao_2020-08.xlsx,
+        execucao_2020-09.xlsx,
+        execucao_2020-10.xlsx,
+        execucao_2020-11.xlsx,
+        execucao_2020-12.xlsx,
+        execucao_2021-01.xlsx,
+        execucao_2021-02.xlsx,
+        execucao_2021-03.xlsx,
+        execucao_2021-04.xlsx,
+        execucao_2021-05.xlsx,
+        execucao_2021-06.xlsx,
+        execucao_2021-07.xlsx,
+        execucao_2021-08.xlsx,
+        execucao_2021-09.xlsx,
+        execucao_2021-10.xlsx,
+        execucao_2021-11.xlsx,
+        execucao_2021-12.xlsx,
+        execucao_2022-01.xlsx,
+        execucao_2022-02.xlsx,
+        execucao_2022-03.xlsx,
+        execucao_2022-04.xlsx,
+        execucao_2022-05.xlsx,
+        execucao_2022-06.xlsx,
+        execucao_2022-07.xlsx,
+        execucao_2022-08.xlsx,
+        execucao_2022-09.xlsx,
+        execucao_2022-10.xlsx,
+        execucao_2022-11.xlsx,
+        execucao_2022-12.xlsx,
+        execucao_2023-01.xlsx,
+        execucao_2023-02.xlsx,
+        execucao_2023-03.xlsx,
+        execucao_2023-04.xlsx,
+        execucao_2023-05.xlsx,
+      ]
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -288,108 +399,117 @@
     schema:
       fields:
         - name: ANO
-          title: 'Ano de exercício'
-          description: 'Ano de exercício da execução orçamentária'
+          title: "Ano de exercício"
+          description: "Ano de exercício da execução orçamentária"
           type: integer
         - name: MES
-          title: 'Mês númerico'
+          title: "Mês númerico"
           type: integer
         - name: UO_COD
-          title: 'Código da Unidade Orçamentária'
-          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          title: "Código da Unidade Orçamentária"
+          description: "Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento"
           type: integer
         - name: UE_COD
-          title: 'Código da Unidade Executora'
-          description: 'Unidade administrativa investida de poderes para gerir recursos orçamentários'
+          title: "Código da Unidade Executora"
+          description: "Unidade administrativa investida de poderes para gerir recursos orçamentários"
           type: integer
         - name: UO_FINAN
           type: integer
-          title: 'Unid Orçam Financiadora - Código'
-          description: 'Código da unidade financiadora da despesa orçamentária'
+          title: "Unid Orçam Financiadora - Código"
+          description: "Código da unidade financiadora da despesa orçamentária"
         - name: UPG_COD
           type: integer
-          title: 'Unid Programação Gasto - Código'
-          description: 'Código de unidade de programação de gasto relacionado com o código de controle interno da unidade administrativa, de acordo com tabela elaborada pela Unidade Orçamentária'
+          title: "Unid Programação Gasto - Código"
+          description: "Código de unidade de programação de gasto relacionado com o código de controle interno da unidade administrativa, de acordo com tabela elaborada pela Unidade Orçamentária"
         - name: EMPENHO_NUM
-          title: 'Número do documento de empenho'
+          title: "Número do documento de empenho"
           type: integer
         - name: FUNCAO_COD
-          title: 'Código da Função'
-          description: 'Pertencente à classificação funcional-programática do orçamento'   
+          title: "Código da Função"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: integer
         - name: ACAO_COD
-          title: 'Código da Ação (Projeto/Atividade)'
-          description: 'Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário'
+          title: "Código da Ação (Projeto/Atividade)"
+          description: "Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário"
           type: integer
         - name: GRUPO_COD
           type: integer
-          title: 'Código do Grupo de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Grupo de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: MODALIDADE_COD
           type: integer
-          title: 'Código da Modalidade de Aplicação'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Modalidade de Aplicação"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IAG_COD
           type: integer
-          title: 'Código do Identificador de Ação Governamental'
-          description: 'Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações'
+          title: "Código do Identificador de Ação Governamental"
+          description: "Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações"
         - name: FONTE_COD
           type: integer
-          title: 'Código da Fonte de recursos'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Fonte de recursos"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IPU_COD
-          title: 'Código do Identificador de Procedência e Uso'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Identificador de Procedência e Uso"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: PROCESSO_NUMERO
           type: yearmonth
-          title: 'Número Processo Compra SIAD'
+          title: "Número Processo Compra SIAD"
           description: Número de identificação formatado do processo de compra SIAD (formato UUUUUUU 999999/AAAA - Unidade de processamento, Número do processo, Ano do processo)
         - name: CONTRATO_ENTRADA
           type: integer
-          title: 'Contrato Convênio Entrada'
+          title: "Contrato Convênio Entrada"
           description: Número atribuído pelo SIAFI-MG ao contrato/convênio de entrada cadastrado no subsistema Rotina Administrativa
         - name: OBRA_NUMERO
           type: integer
-          title: 'Número Obra'
-          description: 'Número da obra associada ao contrato/convênio de obra'
+          title: "Número Obra"
+          description: "Número da obra associada ao contrato/convênio de obra"
         - name: CONTRATO_NUMERO
           type: integer
-          title: 'Contrato Convênio Saída'
-          description: 'Número atribuído pelo SIAFI-MG ao contrato/convênio de saída cadastrado no subsistema Rotina'
+          title: "Contrato Convênio Saída"
+          description: "Número atribuído pelo SIAFI-MG ao contrato/convênio de saída cadastrado no subsistema Rotina"
         - name: ELEMENTO_ITEM_COD
-          title: 'Código do Elemento Item de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Elemento Item de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: ELEMENTO_ORIGEM_DEA_COD
-          type: integer  
-          title: 'Elemento de despesa de origem do DEA'
+          type: integer
+          title: "Elemento de despesa de origem do DEA"
         - name: ITEM_ORIGEM_DEA_COD
-          title: 'Item de despesa de origem do DEA'
+          title: "Item de despesa de origem do DEA"
           type: integer
         - name: CREDOR_CNPJ_CPF
-          title: 'CNPJ ou CPF formatado'
-          description: 'CNPJ ou CPF do credor da despesa'
+          title: "CNPJ ou CPF formatado"
+          description: "CNPJ ou CPF do credor da despesa"
           type: string
         - name: DESPESA_EMP
-          title: 'Despesa empenhada'
-          description: 'Valor líquido da despesa empenhada'
+          title: "Despesa empenhada"
+          description: "Valor líquido da despesa empenhada"
           type: number
         - name: DESPESA_LIQ
-          title: 'Despesa liquidada'
-          description: 'Valor líquido da despesa liquidada'
+          title: "Despesa liquidada"
+          description: "Valor líquido da despesa liquidada"
           type: number
         - name: DESPESA_PAGA_ORC
-          title: 'Valor Pago Orçamentário'
-          description: 'valor líquido, em reais, efetivamente pago em parte ou de todo o empenho'
+          title: "Valor Pago Orçamentário"
+          description: "valor líquido, em reais, efetivamente pago em parte ou de todo o empenho"
           type: number
         - name: DESPESA_PAGA_FIN
-          title: 'Valor pago financeiro'
-          description: 'Valor referente aos pagamentos efetuados através de movimentações bancarias, escriturais e apropriação contábil da despesa'
+          title: "Valor pago financeiro"
+          description: "Valor referente aos pagamentos efetuados através de movimentações bancarias, escriturais e apropriação contábil da despesa"
           type: number
   - name: receita
     type: table
-    path: [receita_2017.xlsx, receita_2018.xlsx, receita_2019.xlsx, receita_2020.xlsx, receita_2021.xlsx, receita_2022.xlsx, receita_2023.xlsx]
+    path:
+      [
+        receita_2017.xlsx,
+        receita_2018.xlsx,
+        receita_2019.xlsx,
+        receita_2020.xlsx,
+        receita_2021.xlsx,
+        receita_2022.xlsx,
+        receita_2023.xlsx,
+      ]
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -397,43 +517,91 @@
     schema:
       fields:
         - name: ANO
-          title: 'Ano de exercício'
-          description: 'Ano de exercício da execução orçamentária'
+          title: "Ano de exercício"
+          description: "Ano de exercício da execução orçamentária"
           type: integer
         - name: UO_COD
-          title: 'Código da Unidade Orçamentária'
-          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          title: "Código da Unidade Orçamentária"
+          description: "Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento"
           type: integer
         - name: MES
-          title: 'Mês númerico'
+          title: "Mês númerico"
           type: integer
         - name: CLASSIFICACAO_COD
           type: integer
-          title: 'Classificação Receita - Código' 
-          description: 'Código completo da classificação econômica da receita'
+          title: "Classificação Receita - Código"
+          description: "Código completo da classificação econômica da receita"
         - name: CLASSIFICACAO_COD_FORMATADO
           type: string
-          title: 'Classificação Receita - Formatado'
-          description: 'Código completo formatado da classificação econômica da receita (Formato 9.9.9.9.99.99.99)'
+          title: "Classificação Receita - Formatado"
+          description: "Código completo formatado da classificação econômica da receita (Formato 9.9.9.9.99.99.99)"
         - name: CLASSIFICACAO_NOME
-          title: 'Classificação Receita - Descrição'
-          description: 'Descrição da classificação econômica completa da receita'
+          title: "Classificação Receita - Descrição"
+          description: "Descrição da classificação econômica completa da receita"
           type: string
         - name: FONTE_COD
           type: integer
-          title: 'Código da Fonte de recursos'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Fonte de recursos"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: PREVISTO_INICIAL
-          title: 'Valor Previsto Inicial'
-          description: 'Valor, em reais, da previsão inicial da receita.'
+          title: "Valor Previsto Inicial"
+          description: "Valor, em reais, da previsão inicial da receita."
           type: integer
         - name: EFETIVADO_AJUSTADO
-          title: 'Valor Efetivado Ajustado'
-          description: 'Valor, em reais, da receita orçamentária efetivada ajustada'
+          title: "Valor Efetivado Ajustado"
+          description: "Valor, em reais, da receita orçamentária efetivada ajustada"
           type: number
   - name: restos-pagar
     type: table
-    path: [restos-pagar_2019-01_parte-1.xlsx, restos-pagar_2019-01_parte-2.xlsx, restos-pagar_2019-01_parte-3.xlsx, restos-pagar_2019-01_parte-4.xlsx, restos-pagar_2019-01_parte-5.xlsx, restos-pagar_2019-01_parte-6.xlsx,restos-pagar_2019-02.xlsx, restos-pagar_2019-03.xlsx, restos-pagar_2019-04.xlsx, restos-pagar_2019-05.xlsx,restos-pagar_2019-06.xlsx, restos-pagar_2019-07.xlsx, restos-pagar_2019-08.xlsx, restos-pagar_2019-09.xlsx, restos-pagar_2019-10.xlsx, restos-pagar_2019-11.xlsx,restos-pagar_2019-12.xlsx, restos-pagar_2020-01_parte-1.xlsx, restos-pagar_2020-01_parte-2.xlsx, restos-pagar_2020-01_parte-3.xlsx, restos-pagar_2020-02-03.xlsx, restos-pagar_2020-04-05.xlsx, restos-pagar_2020-06-07.xlsx, restos-pagar_2020-08-09.xlsx, restos-pagar_2020-10-12.xlsx, restos-pagar_2021-01_parte-1.xlsx, restos-pagar_2021-01_parte-2.xlsx, restos-pagar_2021-01_parte-3.xlsx, restos-pagar_2021-02-03.xlsx, restos-pagar_2021-04-05.xlsx, restos-pagar_2021-06-07.xlsx, restos-pagar_2021-08-09.xlsx,restos-pagar_2021-10-12.xlsx,restos-pagar_2022-01_parte-1.xlsx, restos-pagar_2022-01_parte-2.xlsx, restos-pagar_2022-01_parte-3.xlsx, restos-pagar_2022-02-03.xlsx, restos-pagar_2022-04-05.xlsx, restos-pagar_2022-06-07.xlsx, restos-pagar_2022-08-09.xlsx,restos-pagar_2022-10-12.xlsx,restos-pagar_2023-01_parte-1.xlsx, restos-pagar_2023-01_parte-2.xlsx, restos-pagar_2023-01_parte-3.xlsx, restos-pagar_2023-02-03.xlsx, restos-pagar_2023-04-05.xlsx]
+    path:
+      [
+        restos-pagar_2019-01_parte-1.xlsx,
+        restos-pagar_2019-01_parte-2.xlsx,
+        restos-pagar_2019-01_parte-3.xlsx,
+        restos-pagar_2019-01_parte-4.xlsx,
+        restos-pagar_2019-01_parte-5.xlsx,
+        restos-pagar_2019-01_parte-6.xlsx,
+        restos-pagar_2019-02.xlsx,
+        restos-pagar_2019-03.xlsx,
+        restos-pagar_2019-04.xlsx,
+        restos-pagar_2019-05.xlsx,
+        restos-pagar_2019-06.xlsx,
+        restos-pagar_2019-07.xlsx,
+        restos-pagar_2019-08.xlsx,
+        restos-pagar_2019-09.xlsx,
+        restos-pagar_2019-10.xlsx,
+        restos-pagar_2019-11.xlsx,
+        restos-pagar_2019-12.xlsx,
+        restos-pagar_2020-01_parte-1.xlsx,
+        restos-pagar_2020-01_parte-2.xlsx,
+        restos-pagar_2020-01_parte-3.xlsx,
+        restos-pagar_2020-02-03.xlsx,
+        restos-pagar_2020-04-05.xlsx,
+        restos-pagar_2020-06-07.xlsx,
+        restos-pagar_2020-08-09.xlsx,
+        restos-pagar_2020-10-12.xlsx,
+        restos-pagar_2021-01_parte-1.xlsx,
+        restos-pagar_2021-01_parte-2.xlsx,
+        restos-pagar_2021-01_parte-3.xlsx,
+        restos-pagar_2021-02-03.xlsx,
+        restos-pagar_2021-04-05.xlsx,
+        restos-pagar_2021-06-07.xlsx,
+        restos-pagar_2021-08-09.xlsx,
+        restos-pagar_2021-10-12.xlsx,
+        restos-pagar_2022-01_parte-1.xlsx,
+        restos-pagar_2022-01_parte-2.xlsx,
+        restos-pagar_2022-01_parte-3.xlsx,
+        restos-pagar_2022-02-03.xlsx,
+        restos-pagar_2022-04-05.xlsx,
+        restos-pagar_2022-06-07.xlsx,
+        restos-pagar_2022-08-09.xlsx,
+        restos-pagar_2022-10-12.xlsx,
+        restos-pagar_2023-01_parte-1.xlsx,
+        restos-pagar_2023-01_parte-2.xlsx,
+        restos-pagar_2023-01_parte-3.xlsx,
+        restos-pagar_2023-02-03.xlsx,
+        restos-pagar_2023-04-05.xlsx,
+      ]
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -441,130 +609,130 @@
     schema:
       fields:
         - name: ANO
-          title: 'Ano de exercício'
-          description: 'Ano de exercício da execução orçamentária'
+          title: "Ano de exercício"
+          description: "Ano de exercício da execução orçamentária"
           type: integer
         - name: ANO_ORIGEM_RP
-          title: 'Ano Origem Restos a Pagar'
-          description: 'Ano de origem do documento de Restos a Pagar'
+          title: "Ano Origem Restos a Pagar"
+          description: "Ano de origem do documento de Restos a Pagar"
           type: integer
         - name: MES_COD
-          title: 'Mês númerico'
+          title: "Mês númerico"
           type: integer
         - name: UO_COD
-          title: 'Código da Unidade Orçamentária'
-          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          title: "Código da Unidade Orçamentária"
+          description: "Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento"
           type: integer
         - name: UE_COD
-          title: 'Código da Unidade Executora'
-          description: 'Unidade administrativa investida de poderes para gerir recursos orçamentários'
+          title: "Código da Unidade Executora"
+          description: "Unidade administrativa investida de poderes para gerir recursos orçamentários"
           type: integer
         - name: UO_FINAN
           type: integer
-          title: 'Unid Orçam Financiadora - Código'
-          description: 'Código da unidade financiadora da despesa orçamentária'
+          title: "Unid Orçam Financiadora - Código"
+          description: "Código da unidade financiadora da despesa orçamentária"
         - name: UPG_COD
           type: integer
-          title: 'Unid Programação Gasto - Código'
+          title: "Unid Programação Gasto - Código"
           description: Código de unidade de programação de gasto relacionado com o código de controle interno da unidade administrativa, de acordo com tabela elaborada pela Unidade Orçamentária
         - name: EMPENHO_NUM
           type: integer
         - name: FUNCAO_COD
-          title: 'Código da Função'
-          description: 'Pertencente à classificação funcional-programática do orçamento'   
+          title: "Código da Função"
+          description: "Pertencente à classificação funcional-programática do orçamento"
           type: integer
         - name: ACAO_COD
-          title: 'Código da Ação (Projeto/Atividade)'
-          description: 'Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário'
+          title: "Código da Ação (Projeto/Atividade)"
+          description: "Pertencente à classificação funcional-programática do orçamento, corresponde à Ação de governo que busca atender objetivos definidos no planejamento orçamentário"
           type: integer
         - name: GRUPO_COD
           type: integer
-          title: 'Código do Grupo de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Grupo de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: MODALIDADE_COD
           type: integer
-          title: 'Código da Modalidade de Aplicação'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Modalidade de Aplicação"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IAG_COD
           type: integer
-          title: 'Código do Identificador de Ação Governamental'
-          description: 'Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações'
+          title: "Código do Identificador de Ação Governamental"
+          description: "Classificação orçamentária que distingue as ações governamentais (Projeto/Atividade) de acompanhamento intensivo das demais ações"
         - name: FONTE_COD
           type: integer
-          title: 'Código da Fonte de recursos'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código da Fonte de recursos"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
         - name: IPU_COD
-          title: 'Código do Identificador de Procedência e Uso'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Identificador de Procedência e Uso"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: CREDOR_CNPJ_CPF
-          title: 'CNPJ ou CPF formatado'
-          description: 'CNPJ ou CPF do credor da despesa'
+          title: "CNPJ ou CPF formatado"
+          description: "CNPJ ou CPF do credor da despesa"
           type: string
         - name: RAZAO_SOCIAL
           type: string
         - name: PROCESSO_NUMERO
           type: string
-          title: 'Número Processo Compra SIAD'
+          title: "Número Processo Compra SIAD"
           description: Número de identificação formatado do processo de compra SIAD (formato UUUUUUU 999999/AAAA - Unidade de processamento, Número do processo, Ano do processo)
         - name: CONTRATO_ENTRADA
           type: integer
-          title: 'Contrato Convênio Entrada'
-          description: 'Número atribuído pelo SIAFI-MG ao contrato/convênio de entrada cadastrado no subsistema Rotina Administrativa'
+          title: "Contrato Convênio Entrada"
+          description: "Número atribuído pelo SIAFI-MG ao contrato/convênio de entrada cadastrado no subsistema Rotina Administrativa"
         - name: OBRA_NUMERO
           type: integer
-          title: 'Número Obra'
-          description: 'Número da obra associada ao contrato/convênio de obra'
+          title: "Número Obra"
+          description: "Número da obra associada ao contrato/convênio de obra"
         - name: CONTRATO_NUMERO
           type: integer
-          title: 'Número do contrato'
-          description: 'Número atribuído pelo sistema SIAFI a contrato/convênio de saída'
+          title: "Número do contrato"
+          description: "Número atribuído pelo sistema SIAFI a contrato/convênio de saída"
         - name: ELEMENTO_ITEM_COD
-          title: 'Código do Elemento Item de Despesa'
-          description: 'Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64'
+          title: "Código do Elemento Item de Despesa"
+          description: "Pertencente à classificação por natureza de despesa do orçamentário, em acordo com a Lei 4320/64"
           type: integer
         - name: ELEMENTO_ORIGEM_DEA_COD
           type: integer
-          title: 'Elemento de despesa de origem do DEA'
+          title: "Elemento de despesa de origem do DEA"
         - name: ITEM_ORIGEM_DEA_COD
           type: integer
-          title: 'Item de despesa de origem do DEA'
+          title: "Item de despesa de origem do DEA"
         - name: VL_INSCRITO_RPNP
           type: integer
-          title: 'Valor Inscrito Não Processado'
-          description: 'Valor, em reais, de saldo de empenhos'
+          title: "Valor Inscrito Não Processado"
+          description: "Valor, em reais, de saldo de empenhos"
         - name: VL_CANCELADO_RPNP
           type: integer
-          title: 'Valor Cancelado Não Processado '
-          description: 'Valor cancelado, em reais, de empenho inscrito em Restos a Pagar não processado'
+          title: "Valor Cancelado Não Processado "
+          description: "Valor cancelado, em reais, de empenho inscrito em Restos a Pagar não processado"
         - name: VL_LIQUIDADO_RPNP
-          title: 'Valor da despesa liquida de restos a pagar não processados'
+          title: "Valor da despesa liquida de restos a pagar não processados"
           type: integer
         - name: VL_OLP_RPNP
-          title: 'Obrigação líquida a pagar de restos a pagar não processados'
+          title: "Obrigação líquida a pagar de restos a pagar não processados"
           type: integer
         - name: VL_PAGO_RPNP
           type: integer
-          title: 'Valor pago de restos a pagar não processados'
+          title: "Valor pago de restos a pagar não processados"
         - name: VL_SALDO_RPNP
           type: integer
-          title: 'Saldo de restos a pagar não processados' 
+          title: "Saldo de restos a pagar não processados"
         - name: VL_INSCRITO_RPP_DEMAIS
           type: number
-          title: 'Valor Inscrito Processado'
-          description: 'Valor, em reais, de despesa liquidada de exercícios anteriores'
+          title: "Valor Inscrito Processado"
+          description: "Valor, em reais, de despesa liquidada de exercícios anteriores"
         - name: VL_CANCELADO_RPP_DEMAIS
           type: integer
-          title: 'Valor cancelado de restos a pagar processados' 
+          title: "Valor cancelado de restos a pagar processados"
         - name: VL_PAGO_RPP_DEMAIS
           type: integer
-          title: 'Valor pago de restos a pagar processados'
+          title: "Valor pago de restos a pagar processados"
         - name: VL_OLP_RPP_DEMAIS
           type: number
-          title: 'Obrigação líquida a pagar de restos a pagar processados'
+          title: "Obrigação líquida a pagar de restos a pagar processados"
         - name: VL_OLP_RP_DEMAIS
           type: number
-          title: 
+          title:
   - name: tbl-aux_upg-desc
     type: table
     path: tbl-aux_upg-desc.xlsx
@@ -579,12 +747,12 @@
         - name: UO_COD
           type: integer
         - name: UE_COD
-          title: 'Código da Unidade Executora'
-          description: 'Unidade administrativa investida de poderes para gerir recursos orçamentários'
+          title: "Código da Unidade Executora"
+          description: "Unidade administrativa investida de poderes para gerir recursos orçamentários"
           type: integer
         - name: UPG_COD
           type: integer
-          title: 'Unid Programação Gasto - Código'
+          title: "Unid Programação Gasto - Código"
           description: Código de unidade de programação de gasto relacionado com o código de controle interno da unidade administrativa, de acordo com tabela elaborada pela Unidade Orçamentária
         - name: UPG_DESC
           type: string
