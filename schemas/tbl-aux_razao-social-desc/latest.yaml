@@ -1,0 +1,5 @@
+fields:
+  - name: CNPJ_CPF Credor - Formatado
+    type: string
+  - name: Razão Social Credor
+    type: string

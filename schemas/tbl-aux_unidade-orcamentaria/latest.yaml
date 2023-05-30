@@ -1,0 +1,5 @@
+fields:
+  - name: UO_COD
+    type: integer
+  - name: UO_SIGLA
+    type: string

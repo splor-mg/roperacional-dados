@@ -1,0 +1,21 @@
+fields:
+  - name: GRUPO_COD
+    type: integer
+  - name: GRUPO_DESC
+    type: string
+  - name: MODALIDADE_COD
+    type: integer
+  - name: MODALIDADE_DESC
+    type: string
+  - name: IAG_COD
+    type: integer
+  - name: IAG_DESC
+    type: string
+  - name: FONTE_COD
+    type: integer
+  - name: FONTE_DESC
+    type: string
+  - name: IPU_COD
+    type: integer
+  - name: IPU_DESC
+    type: string

@@ -1,0 +1,80 @@
+fields:
+  - name: ANO
+    type: integer
+    title: Ano de exercício
+    description: Ano de exercício da execução orçamentária
+  - name: DATA_PUBLICACAO
+    type: datetime
+    title: Data de publicação do decreto
+    description: Data de publicação do decreto de alteração orçamentária no Diário
+      Oficial
+  - name: DATA_REGISTRO
+    type: datetime
+    title: Data de registro do decreto
+    description: Data de registro do decreto de alteração orçamentária no sistema
+      SIAFI
+  - name: UO_COD
+    type: integer
+    title: Código da Unidade Orçamentária
+    description: Percentente à classificação institucional do orçamento, corresponde
+      à Unidade Administrativa contemplada com recursos orçamentários responsável
+      pela execução do orçamento
+  - name: ACAO_COD
+    type: integer
+    title: Código da Ação (Projeto/Atividade)
+    description: Pertencente à classificação funcional-programática do orçamento,
+      corresponde à Ação de governo que busca atender objetivos definidos no planejamento
+      orçamentário
+  - name: Lei Aprovação Orçamento
+    type: integer
+    title: Lei autorizativa
+    description: Lei autorizativa do decreto de alteração orçamentária
+  - name: DECRETO
+    type: integer
+    title: Decreto de alteração orçamentária
+    description: Número do decreto de alteração orçamentária elaborado
+  - name: ORIGEM_CREDITO
+    type: integer
+    title: Código da origem do crédito
+    description: Detalha os possível tipos de alteração orçamentária (remanejamento,
+      superávit financeiro ou excesso de arrecadação), com informações a respeito
+      da fonte de recursos e/ou uso do recurso
+  - name: ORIGEM_CREDITO_DESC
+    type: string
+    title: Descrição da origem do crédito
+    description: Detalha os possíveis tipos de alteração orçamentária (remanejamento,
+      superávit financeiro ou excesso de arrecadação), com informações a respeito
+      da fonte de recursos e/ou uso do recurso
+  - name: GRUPO_COD
+    type: integer
+    title: Código do Grupo de Despesa
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: MODALIDADE
+    type: integer
+    title: Código da Modalidade de Aplicação
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IAG_COD
+    type: integer
+    title: Código do Identificador de Ação Governamental
+    description: Classificação orçamentária que distingue as ações governamentais
+      (Projeto/Atividade) de acompanhamento intensivo das demais ações
+  - name: FONTE_COD
+    type: integer
+    title: Código da Fonte de recursos
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IPU_COD
+    type: integer
+    title: Código do Identificador de Procedência e Uso
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: SUPLEMENTACAO
+    type: number
+    title: Valor da suplementação
+    description: Valor em reais suplementado pelo decreto de alteração orçamentária
+  - name: ANULACAO
+    type: integer
+    title: Valor da anulação
+    description: Valor da anulação no decreto de alteração orçamentária

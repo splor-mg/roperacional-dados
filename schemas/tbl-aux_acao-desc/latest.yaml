@@ -1,0 +1,21 @@
+fields:
+  - name: ANO
+    type: integer
+  - name: UO_COD
+    type: integer
+  - name: FUNCAO_COD
+    type: integer
+  - name: FUNCAO_DESC
+    type: string
+  - name: SUBFUNCAO_COD
+    type: integer
+  - name: SUBFUNCAO_DESC
+    type: string
+  - name: PROGRAMA_COD
+    type: integer
+  - name: PROGRAMA_DESC
+    type: string
+  - name: ACAO_COD
+    type: integer
+  - name: ACAO_DESC
+    type: string

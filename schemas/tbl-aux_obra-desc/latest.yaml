@@ -1,0 +1,5 @@
+fields:
+  - name: OBRA_NUMERO
+    type: integer
+  - name: OBRA_DESC
+    type: string

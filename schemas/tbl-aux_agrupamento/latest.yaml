@@ -1,0 +1,17 @@
+fields:
+  - name: field1
+    type: string
+  - name: field2
+    type: string
+  - name: field3
+    type: any
+  - name: field4
+    type: any
+  - name: field5
+    type: any
+  - name: field6
+    type: any
+  - name: field7
+    type: any
+  - name: field8
+    type: any

@@ -1,0 +1,77 @@
+fields:
+  - name: ANO
+    type: integer
+    title: Ano de exercício
+    description: Ano de exercício da execução orçamentária
+  - name: UO_COD
+    type: integer
+    title: Código da Unidade Orçamentária
+    description: Percentente à classificação institucional do orçamento, corresponde
+      à Unidade Administrativa contemplada com recursos orçamentários responsável
+      pela execução do orçamento
+  - name: ACAO_COD
+    type: integer
+    title: Código da Ação (Projeto/Atividade)
+    description: Pertencente à classificação funcional-programática do orçamento,
+      corresponde à Ação de governo que busca atender objetivos definidos no planejamento
+      orçamentário
+  - name: GRUPO_COD
+    type: integer
+    title: Código do Grupo de Despesa
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IAG_COD
+    type: integer
+    title: Código do Identificador de Ação Governamental
+    description: Classificação orçamentária que distingue as ações governamentais
+      (Projeto/Atividade) de acompanhamento intensivo das demais ações
+  - name: FONTE_COD
+    type: integer
+    title: Código da Fonte de recursos
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IPU_COD
+    type: integer
+    title: Código do Identificador de Procedência e Uso
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: CONTRATO_NUMERO
+    type: integer
+    title: Número do contrato
+    description: Número atribuído pelo sistema SIAFI a contrato/convênio de saída
+  - name: CREDOR_CNPJ_CPF
+    type: string
+    title: CNPJ ou CPF formatado
+    description: CNPJ ou CPF do credor da despesa
+  - name: ELEMENTO_ITEM_COD
+    type: integer
+    title: Código do Elemento Item de Despesa
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: MATERIAL/SERVICO COD
+    type: string
+    title: Código númerico do material/serviço no catálogo do SIAD
+  - name: MATERIAL/SERVICO DESC
+    type: string
+    title: Especificação do material/serviço no catálogo do SIAD
+  - name: ITEM_MATERIAL_SERVICO_COD
+    type: integer
+    title: Código númerico do item de material/serviço no catálogo do SIAD
+  - name: TIPO_MATERIAL_SERVICO
+    type: string
+    title: Especificação se item se refere a material ou serviço
+  - name: ITEM_MATERIAL_SERVICO_DESC
+    type: string
+    title: Especificação do item de material/serviço no catálogo do SIAD
+  - name: QTDE_EMP
+    type: number
+    title: Saldo da quantidade empenhada do material/serviço
+  - name: QTDE_LIQ
+    type: number
+    title: Saldo da quantidade liquidada do material/serviço
+  - name: DESPESA_EMP
+    type: number
+    title: Saldo do valor empenhado do material/serviço
+  - name: DESPESA_LIQ
+    type: number
+    title: Saldo do valor liquidado do material/serviço

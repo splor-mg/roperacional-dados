@@ -1,0 +1,5 @@
+fields:
+  - name: Número Processo Compra SIAD
+    type: string
+  - name: Objeto Processo
+    type: string
