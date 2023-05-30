@@ -732,7 +732,7 @@ resources:
           title: "Obrigação líquida a pagar de restos a pagar processados"
         - name: VL_OLP_RP_DEMAIS
           type: number
-          title:
+          title: "Obrigação líquida a pagar de restos"
   - name: tbl-aux_upg-desc
     type: table
     path: tbl-aux_upg-desc.xlsx
