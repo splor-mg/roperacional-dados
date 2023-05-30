@@ -709,7 +709,7 @@ resources:
           title: "Valor da despesa liquida de restos a pagar não processados"
           type: integer
         - name: VL_OLP_RPNP
-          title: "Obrigação líquida a pagar de restos a pagar não processados"
+          title: "Obrigação liquidada a pagar de restos a pagar não processados"
           type: integer
         - name: VL_PAGO_RPNP
           type: integer
@@ -729,10 +729,10 @@ resources:
           title: "Valor pago de restos a pagar processados"
         - name: VL_OLP_RPP_DEMAIS
           type: number
-          title: "Obrigação líquida a pagar de restos a pagar processados"
+          title: "Obrigação liquidada a pagar de restos a pagar processados"
         - name: VL_OLP_RP_DEMAIS
           type: number
-          title: "Obrigação líquida a pagar de restos"
+          title: "Obrigação liquidada a pagar de restos"
   - name: tbl-aux_upg-desc
     type: table
     path: tbl-aux_upg-desc.xlsx
