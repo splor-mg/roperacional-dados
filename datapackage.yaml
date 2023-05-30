@@ -4,12 +4,12 @@ resources:
     path:
       [
         data-raw/alteracoes_orcamentarias_2017.xlsx,
-        data-raw/alteracoes_orcamentarias_2018.xlsx,
-        data-raw/alteracoes_orcamentarias_2019.xlsx,
-        data-raw/alteracoes_orcamentarias_2020.xlsx,
-        data-raw/alteracoes_orcamentarias_2021.xlsx,
-        data-raw/alteracoes_orcamentarias_2022.xlsx,
-        data-raw/alteracoes_orcamentarias_2023.xlsx,
+        data-raw/alteracoes-orcamentarias_2018.xlsx,
+        data-raw/alteracoes-orcamentarias_2019.xlsx,
+        data-raw/alteracoes-orcamentarias_2020.xlsx,
+        data-raw/alteracoes-orcamentarias_2021.xlsx,
+        data-raw/alteracoes-orcamentarias_2022.xlsx,
+        data-raw/alteracoes-orcamentarias_2023.xlsx,
       ]
     scheme: file
     format: xlsx
