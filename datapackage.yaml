@@ -11,7 +11,6 @@ resources:
         data-raw/alteracoes-orcamentarias_2023.xlsx,
       ]
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -90,7 +89,6 @@ resources:
         data-raw/cota-item-data_2023.xlsx,
       ]
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: Ano de Exercício
@@ -150,7 +148,6 @@ resources:
         data-raw/credito-inicial-autorizado_2023.xlsx,
       ]
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -228,7 +225,6 @@ resources:
         data-raw/execucao-itens-materiais_2021-2022.xlsx,
       ]
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -380,7 +376,6 @@ resources:
         data-raw/execucao_2023-05.xlsx,
       ]
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -495,7 +490,6 @@ resources:
         data-raw/receita_2023.xlsx,
       ]
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -584,7 +578,6 @@ resources:
         data-raw/restos-pagar_2023-04-05.xlsx,
       ]
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -715,7 +708,6 @@ resources:
   - name: tbl-aux_upg-desc
     path: data-raw/tbl-aux_upg-desc.xlsx
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -735,7 +727,6 @@ resources:
   - name: tbl-aux_acao-desc
     path: data-raw/tbl-aux_acao-desc.xlsx
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: ANO
@@ -862,7 +853,6 @@ resources:
   - name: tbl-aux_obra-desc
     path: data-raw/tbl-aux_obra-desc.xlsx
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: OBRA_NUMERO
@@ -872,7 +862,6 @@ resources:
   - name: tbl-aux_razao-social-desc
     path: data-raw/tbl-aux_razao-social-desc.xlsx
     format: xlsx
-    encoding: utf-8
     schema:
       fields:
         - name: CNPJ_CPF Credor - Formatado
