@@ -3,13 +3,13 @@ resources:
     type: table
     path:
       [
-        alteracoes_orcamentarias_2017.xlsx,
-        alteracoes_orcamentarias_2018.xlsx,
-        alteracoes_orcamentarias_2019.xlsx,
-        alteracoes_orcamentarias_2020.xlsx,
-        alteracoes_orcamentarias_2021.xlsx,
-        alteracoes_orcamentarias_2022.xlsx,
-        alteracoes_orcamentarias_2023.xlsx,
+        data-raw/alteracoes_orcamentarias_2017.xlsx,
+        data-raw/alteracoes_orcamentarias_2018.xlsx,
+        data-raw/alteracoes_orcamentarias_2019.xlsx,
+        data-raw/alteracoes_orcamentarias_2020.xlsx,
+        data-raw/alteracoes_orcamentarias_2021.xlsx,
+        data-raw/alteracoes_orcamentarias_2022.xlsx,
+        data-raw/alteracoes_orcamentarias_2023.xlsx,
       ]
     scheme: file
     format: xlsx
@@ -85,13 +85,13 @@ resources:
     type: table
     path:
       [
-        cota-item-data_2017.xlsx,
-        cota-item-data_2018.xlsx,
-        cota-item-data_2019.xlsx,
-        cota-item-data_2020.xlsx,
-        cota-item-data_2021.xlsx,
-        cota-item-data_2022.xlsx,
-        cota-item-data_2023.xlsx,
+        data-raw/cota-item-data_2017.xlsx,
+        data-raw/cota-item-data_2018.xlsx,
+        data-raw/cota-item-data_2019.xlsx,
+        data-raw/cota-item-data_2020.xlsx,
+        data-raw/cota-item-data_2021.xlsx,
+        data-raw/cota-item-data_2022.xlsx,
+        data-raw/cota-item-data_2023.xlsx,
       ]
     scheme: file
     format: xlsx
@@ -148,13 +148,13 @@ resources:
     type: table
     path:
       [
-        credito-inicial-autorizado_2014-2017.xlsx,
-        credito-inicial-autorizado_2018.xlsx,
-        credito-inicial-autorizado_2019.xlsx,
-        credito-inicial-autorizado_2020.xlsx,
-        credito-inicial-autorizado_2021.xlsx,
-        credito-inicial-autorizado_2022.xlsx,
-        credito-inicial-autorizado_2023.xlsx,
+        data-raw/credito-inicial-autorizado_2014-2017.xlsx,
+        data-raw/credito-inicial-autorizado_2018.xlsx,
+        data-raw/credito-inicial-autorizado_2019.xlsx,
+        data-raw/credito-inicial-autorizado_2020.xlsx,
+        data-raw/credito-inicial-autorizado_2021.xlsx,
+        data-raw/credito-inicial-autorizado_2022.xlsx,
+        data-raw/credito-inicial-autorizado_2023.xlsx,
       ]
     scheme: file
     format: xlsx
@@ -232,10 +232,10 @@ resources:
     type: table
     path:
       [
-        execucao-itens-materiais_2017.xlsx,
-        execucao-itens-materiais_2018.xlsx,
-        execucao-itens-materiais_2019-2020.xlsx,
-        execucao-itens-materiais_2021-2022.xlsx,
+        data-raw/execucao-itens-materiais_2017.xlsx,
+        data-raw/execucao-itens-materiais_2018.xlsx,
+        data-raw/execucao-itens-materiais_2019-2020.xlsx,
+        data-raw/execucao-itens-materiais_2021-2022.xlsx,
       ]
     scheme: file
     format: xlsx
@@ -314,83 +314,83 @@ resources:
     type: table
     path:
       [
-        execucao_2017-01.xlsx,
-        execucao_2017-02.xlsx,
-        execucao_2017-03.xlsx,
-        execucao_2017-04.xlsx,
-        execucao_2017-05.xlsx,
-        execucao_2017-06.xlsx,
-        execucao_2017-07.xlsx,
-        execucao_2017-08.xlsx,
-        execucao_2017-09.xlsx,
-        execucao_2017-10.xlsx,
-        execucao_2017-11.xlsx,
-        execucao_2017-12.xlsx,
-        execucao_2018-01.xlsx,
-        execucao_2018-02.xlsx,
-        execucao_2018-03.xlsx,
-        execucao_2018-04.xlsx,
-        execucao_2018-05.xlsx,
-        execucao_2018-06.xlsx,
-        execucao_2018-07.xlsx,
-        execucao_2018-08.xlsx,
-        execucao_2018-09.xlsx,
-        execucao_2018-10.xlsx,
-        execucao_2018-11.xlsx,
-        execucao_2018-12.xlsx,
-        execucao_2019-01.xlsx,
-        execucao_2019-02.xlsx,
-        execucao_2019-03.xlsx,
-        execucao_2019-04.xlsx,
-        execucao_2019-05.xlsx,
-        execucao_2019-06.xlsx,
-        execucao_2019-07.xlsx,
-        execucao_2019-08.xlsx,
-        execucao_2019-09.xlsx,
-        execucao_2019-10.xlsx,
-        execucao_2019-11.xlsx,
-        execucao_2019-12.xlsx,
-        execucao_2020-01.xlsx,
-        execucao_2020-02.xlsx,
-        execucao_2020-03.xlsx,
-        execucao_2020-04.xlsx,
-        execucao_2020-05.xlsx,
-        execucao_2020-06.xlsx,
-        execucao_2020-07.xlsx,
-        execucao_2020-08.xlsx,
-        execucao_2020-09.xlsx,
-        execucao_2020-10.xlsx,
-        execucao_2020-11.xlsx,
-        execucao_2020-12.xlsx,
-        execucao_2021-01.xlsx,
-        execucao_2021-02.xlsx,
-        execucao_2021-03.xlsx,
-        execucao_2021-04.xlsx,
-        execucao_2021-05.xlsx,
-        execucao_2021-06.xlsx,
-        execucao_2021-07.xlsx,
-        execucao_2021-08.xlsx,
-        execucao_2021-09.xlsx,
-        execucao_2021-10.xlsx,
-        execucao_2021-11.xlsx,
-        execucao_2021-12.xlsx,
-        execucao_2022-01.xlsx,
-        execucao_2022-02.xlsx,
-        execucao_2022-03.xlsx,
-        execucao_2022-04.xlsx,
-        execucao_2022-05.xlsx,
-        execucao_2022-06.xlsx,
-        execucao_2022-07.xlsx,
-        execucao_2022-08.xlsx,
-        execucao_2022-09.xlsx,
-        execucao_2022-10.xlsx,
-        execucao_2022-11.xlsx,
-        execucao_2022-12.xlsx,
-        execucao_2023-01.xlsx,
-        execucao_2023-02.xlsx,
-        execucao_2023-03.xlsx,
-        execucao_2023-04.xlsx,
-        execucao_2023-05.xlsx,
+        data-raw/execucao_2017-01.xlsx,
+        data-raw/execucao_2017-02.xlsx,
+        data-raw/execucao_2017-03.xlsx,
+        data-raw/execucao_2017-04.xlsx,
+        data-raw/execucao_2017-05.xlsx,
+        data-raw/execucao_2017-06.xlsx,
+        data-raw/execucao_2017-07.xlsx,
+        data-raw/execucao_2017-08.xlsx,
+        data-raw/execucao_2017-09.xlsx,
+        data-raw/execucao_2017-10.xlsx,
+        data-raw/execucao_2017-11.xlsx,
+        data-raw/execucao_2017-12.xlsx,
+        data-raw/execucao_2018-01.xlsx,
+        data-raw/execucao_2018-02.xlsx,
+        data-raw/execucao_2018-03.xlsx,
+        data-raw/execucao_2018-04.xlsx,
+        data-raw/execucao_2018-05.xlsx,
+        data-raw/execucao_2018-06.xlsx,
+        data-raw/execucao_2018-07.xlsx,
+        data-raw/execucao_2018-08.xlsx,
+        data-raw/execucao_2018-09.xlsx,
+        data-raw/execucao_2018-10.xlsx,
+        data-raw/execucao_2018-11.xlsx,
+        data-raw/execucao_2018-12.xlsx,
+        data-raw/execucao_2019-01.xlsx,
+        data-raw/execucao_2019-02.xlsx,
+        data-raw/execucao_2019-03.xlsx,
+        data-raw/execucao_2019-04.xlsx,
+        data-raw/execucao_2019-05.xlsx,
+        data-raw/execucao_2019-06.xlsx,
+        data-raw/execucao_2019-07.xlsx,
+        data-raw/execucao_2019-08.xlsx,
+        data-raw/execucao_2019-09.xlsx,
+        data-raw/execucao_2019-10.xlsx,
+        data-raw/execucao_2019-11.xlsx,
+        data-raw/execucao_2019-12.xlsx,
+        data-raw/execucao_2020-01.xlsx,
+        data-raw/execucao_2020-02.xlsx,
+        data-raw/execucao_2020-03.xlsx,
+        data-raw/execucao_2020-04.xlsx,
+        data-raw/execucao_2020-05.xlsx,
+        data-raw/execucao_2020-06.xlsx,
+        data-raw/execucao_2020-07.xlsx,
+        data-raw/execucao_2020-08.xlsx,
+        data-raw/execucao_2020-09.xlsx,
+        data-raw/execucao_2020-10.xlsx,
+        data-raw/execucao_2020-11.xlsx,
+        data-raw/execucao_2020-12.xlsx,
+        data-raw/execucao_2021-01.xlsx,
+        data-raw/execucao_2021-02.xlsx,
+        data-raw/execucao_2021-03.xlsx,
+        data-raw/execucao_2021-04.xlsx,
+        data-raw/execucao_2021-05.xlsx,
+        data-raw/execucao_2021-06.xlsx,
+        data-raw/execucao_2021-07.xlsx,
+        data-raw/execucao_2021-08.xlsx,
+        data-raw/execucao_2021-09.xlsx,
+        data-raw/execucao_2021-10.xlsx,
+        data-raw/execucao_2021-11.xlsx,
+        data-raw/execucao_2021-12.xlsx,
+        data-raw/execucao_2022-01.xlsx,
+        data-raw/execucao_2022-02.xlsx,
+        data-raw/execucao_2022-03.xlsx,
+        data-raw/execucao_2022-04.xlsx,
+        data-raw/execucao_2022-05.xlsx,
+        data-raw/execucao_2022-06.xlsx,
+        data-raw/execucao_2022-07.xlsx,
+        data-raw/execucao_2022-08.xlsx,
+        data-raw/execucao_2022-09.xlsx,
+        data-raw/execucao_2022-10.xlsx,
+        data-raw/execucao_2022-11.xlsx,
+        data-raw/execucao_2022-12.xlsx,
+        data-raw/execucao_2023-01.xlsx,
+        data-raw/execucao_2023-02.xlsx,
+        data-raw/execucao_2023-03.xlsx,
+        data-raw/execucao_2023-04.xlsx,
+        data-raw/execucao_2023-05.xlsx,
       ]
     scheme: file
     format: xlsx
@@ -502,13 +502,13 @@ resources:
     type: table
     path:
       [
-        receita_2017.xlsx,
-        receita_2018.xlsx,
-        receita_2019.xlsx,
-        receita_2020.xlsx,
-        receita_2021.xlsx,
-        receita_2022.xlsx,
-        receita_2023.xlsx,
+        data-raw/receita_2017.xlsx,
+        data-raw/receita_2018.xlsx,
+        data-raw/receita_2019.xlsx,
+        data-raw/receita_2020.xlsx,
+        data-raw/receita_2021.xlsx,
+        data-raw/receita_2022.xlsx,
+        data-raw/receita_2023.xlsx,
       ]
     scheme: file
     format: xlsx
@@ -555,52 +555,52 @@ resources:
     type: table
     path:
       [
-        restos-pagar_2019-01_parte-1.xlsx,
-        restos-pagar_2019-01_parte-2.xlsx,
-        restos-pagar_2019-01_parte-3.xlsx,
-        restos-pagar_2019-01_parte-4.xlsx,
-        restos-pagar_2019-01_parte-5.xlsx,
-        restos-pagar_2019-01_parte-6.xlsx,
-        restos-pagar_2019-02.xlsx,
-        restos-pagar_2019-03.xlsx,
-        restos-pagar_2019-04.xlsx,
-        restos-pagar_2019-05.xlsx,
-        restos-pagar_2019-06.xlsx,
-        restos-pagar_2019-07.xlsx,
-        restos-pagar_2019-08.xlsx,
-        restos-pagar_2019-09.xlsx,
-        restos-pagar_2019-10.xlsx,
-        restos-pagar_2019-11.xlsx,
-        restos-pagar_2019-12.xlsx,
-        restos-pagar_2020-01_parte-1.xlsx,
-        restos-pagar_2020-01_parte-2.xlsx,
-        restos-pagar_2020-01_parte-3.xlsx,
-        restos-pagar_2020-02-03.xlsx,
-        restos-pagar_2020-04-05.xlsx,
-        restos-pagar_2020-06-07.xlsx,
-        restos-pagar_2020-08-09.xlsx,
-        restos-pagar_2020-10-12.xlsx,
-        restos-pagar_2021-01_parte-1.xlsx,
-        restos-pagar_2021-01_parte-2.xlsx,
-        restos-pagar_2021-01_parte-3.xlsx,
-        restos-pagar_2021-02-03.xlsx,
-        restos-pagar_2021-04-05.xlsx,
-        restos-pagar_2021-06-07.xlsx,
-        restos-pagar_2021-08-09.xlsx,
-        restos-pagar_2021-10-12.xlsx,
-        restos-pagar_2022-01_parte-1.xlsx,
-        restos-pagar_2022-01_parte-2.xlsx,
-        restos-pagar_2022-01_parte-3.xlsx,
-        restos-pagar_2022-02-03.xlsx,
-        restos-pagar_2022-04-05.xlsx,
-        restos-pagar_2022-06-07.xlsx,
-        restos-pagar_2022-08-09.xlsx,
-        restos-pagar_2022-10-12.xlsx,
-        restos-pagar_2023-01_parte-1.xlsx,
-        restos-pagar_2023-01_parte-2.xlsx,
-        restos-pagar_2023-01_parte-3.xlsx,
-        restos-pagar_2023-02-03.xlsx,
-        restos-pagar_2023-04-05.xlsx,
+        data-raw/restos-pagar_2019-01_parte-1.xlsx,
+        data-raw/restos-pagar_2019-01_parte-2.xlsx,
+        data-raw/restos-pagar_2019-01_parte-3.xlsx,
+        data-raw/restos-pagar_2019-01_parte-4.xlsx,
+        data-raw/restos-pagar_2019-01_parte-5.xlsx,
+        data-raw/restos-pagar_2019-01_parte-6.xlsx,
+        data-raw/restos-pagar_2019-02.xlsx,
+        data-raw/restos-pagar_2019-03.xlsx,
+        data-raw/restos-pagar_2019-04.xlsx,
+        data-raw/restos-pagar_2019-05.xlsx,
+        data-raw/restos-pagar_2019-06.xlsx,
+        data-raw/restos-pagar_2019-07.xlsx,
+        data-raw/restos-pagar_2019-08.xlsx,
+        data-raw/restos-pagar_2019-09.xlsx,
+        data-raw/restos-pagar_2019-10.xlsx,
+        data-raw/restos-pagar_2019-11.xlsx,
+        data-raw/restos-pagar_2019-12.xlsx,
+        data-raw/restos-pagar_2020-01_parte-1.xlsx,
+        data-raw/restos-pagar_2020-01_parte-2.xlsx,
+        data-raw/restos-pagar_2020-01_parte-3.xlsx,
+        data-raw/restos-pagar_2020-02-03.xlsx,
+        data-raw/restos-pagar_2020-04-05.xlsx,
+        data-raw/restos-pagar_2020-06-07.xlsx,
+        data-raw/restos-pagar_2020-08-09.xlsx,
+        data-raw/restos-pagar_2020-10-12.xlsx,
+        data-raw/restos-pagar_2021-01_parte-1.xlsx,
+        data-raw/restos-pagar_2021-01_parte-2.xlsx,
+        data-raw/restos-pagar_2021-01_parte-3.xlsx,
+        data-raw/restos-pagar_2021-02-03.xlsx,
+        data-raw/restos-pagar_2021-04-05.xlsx,
+        data-raw/restos-pagar_2021-06-07.xlsx,
+        data-raw/restos-pagar_2021-08-09.xlsx,
+        data-raw/restos-pagar_2021-10-12.xlsx,
+        data-raw/restos-pagar_2022-01_parte-1.xlsx,
+        data-raw/restos-pagar_2022-01_parte-2.xlsx,
+        data-raw/restos-pagar_2022-01_parte-3.xlsx,
+        data-raw/restos-pagar_2022-02-03.xlsx,
+        data-raw/restos-pagar_2022-04-05.xlsx,
+        data-raw/restos-pagar_2022-06-07.xlsx,
+        data-raw/restos-pagar_2022-08-09.xlsx,
+        data-raw/restos-pagar_2022-10-12.xlsx,
+        data-raw/restos-pagar_2023-01_parte-1.xlsx,
+        data-raw/restos-pagar_2023-01_parte-2.xlsx,
+        data-raw/restos-pagar_2023-01_parte-3.xlsx,
+        data-raw/restos-pagar_2023-02-03.xlsx,
+        data-raw/restos-pagar_2023-04-05.xlsx,
       ]
     scheme: file
     format: xlsx
@@ -735,7 +735,7 @@ resources:
           title: "Obrigação liquidada a pagar de restos"
   - name: tbl-aux_upg-desc
     type: table
-    path: tbl-aux_upg-desc.xlsx
+    path: data-raw/tbl-aux_upg-desc.xlsx
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -758,7 +758,7 @@ resources:
           type: string
   - name: tbl-aux_acao-desc
     type: table
-    path: tbl-aux_acao-desc.xlsx
+    path: data-raw/tbl-aux_acao-desc.xlsx
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -787,7 +787,7 @@ resources:
           type: string
   - name: tbl-aux_acao-desc_rp
     type: table
-    path: tbl-aux_acao-desc_RP.xls
+    path: data-raw/tbl-aux_acao-desc_RP.xls
     scheme: file
     format: xls
     mediatype: application/vnd.ms-excel
@@ -818,7 +818,7 @@ resources:
           type: string
   - name: tbl-aux_agrupamento
     type: table
-    path: tbl-aux_agrupamento.xls
+    path: data-raw/tbl-aux_agrupamento.xls
     scheme: file
     format: xls
     mediatype: application/vnd.ms-excel
@@ -843,7 +843,7 @@ resources:
           type: any
   - name: tbl-aux_elemento-item
     type: table
-    path: tbl-aux_elemento-item.csv
+    path: data-raw/tbl-aux_elemento-item.csv
     scheme: file
     format: csv
     mediatype: text/csv
@@ -859,7 +859,7 @@ resources:
           type: string
   - name: tbl-aux_natureza-desp-desc
     type: table
-    path: tbl-aux_natureza-desp-desc.xls
+    path: data-raw/tbl-aux_natureza-desp-desc.xls
     scheme: file
     format: xls
     mediatype: application/vnd.ms-excel
@@ -888,7 +888,7 @@ resources:
           type: string
   - name: tbl-aux_objeto-processo-siafi
     type: table
-    path: tbl-aux_objeto-processo-siafi.csv
+    path: data-raw/tbl-aux_objeto-processo-siafi.csv
     scheme: file
     format: csv
     mediatype: text/csv
@@ -901,7 +901,7 @@ resources:
           type: string
   - name: tbl-aux_obra-desc
     type: table
-    path: tbl-aux_obra-desc.xlsx
+    path: data-raw/tbl-aux_obra-desc.xlsx
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -914,7 +914,7 @@ resources:
           type: string
   - name: tbl-aux_razao-social-desc
     type: table
-    path: tbl-aux_razao-social-desc.xlsx
+    path: data-raw/tbl-aux_razao-social-desc.xlsx
     scheme: file
     format: xlsx
     mediatype: application/vnd.ms-excel
@@ -927,7 +927,7 @@ resources:
           type: string
   - name: tbl-aux_unidade-orcamentaria
     type: table
-    path: tbl-aux_unidade-orcamentaria.csv
+    path: data-raw/tbl-aux_unidade-orcamentaria.csv
     scheme: file
     format: csv
     mediatype: text/csv
@@ -943,13 +943,13 @@ resources:
           type: string
   - name: reest_desp
     type: file
-    path: reest_desp.xlsm
+    path: data-raw/reest_desp.xlsm
     scheme: file
     format: xlsm
     encoding: utf-8
   - name: reest_rec
     type: file
-    path: reest_desp.xlsm
+    path: data-raw/reest_desp.xlsm
     scheme: file
     format: xlsm
     encoding: utf-8
