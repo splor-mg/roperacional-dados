@@ -1,6 +1,5 @@
 resources:
   - name: alteracoes-orcamentarias
-    type: table
     path:
       [
         data-raw/alteracoes_orcamentarias_2017.xlsx,
@@ -11,9 +10,7 @@ resources:
         data-raw/alteracoes-orcamentarias_2022.xlsx,
         data-raw/alteracoes-orcamentarias_2023.xlsx,
       ]
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -82,7 +79,6 @@ resources:
           title: "Valor da anulação"
           description: "Valor da anulação no decreto de alteração orçamentária"
   - name: cota-item-data
-    type: table
     path:
       [
         data-raw/cota-item-data_2017.xlsx,
@@ -93,9 +89,7 @@ resources:
         data-raw/cota-item-data_2022.xlsx,
         data-raw/cota-item-data_2023.xlsx,
       ]
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -145,7 +139,6 @@ resources:
           description: "Valor líquido em reais resultante da expressão valor da cota aprovada - valor anulação da cota aprovada"
           type: number
   - name: credito-inicial-autorizado
-    type: table
     path:
       [
         data-raw/credito-inicial-autorizado_2014-2017.xlsx,
@@ -156,9 +149,7 @@ resources:
         data-raw/credito-inicial-autorizado_2022.xlsx,
         data-raw/credito-inicial-autorizado_2023.xlsx,
       ]
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -229,7 +220,6 @@ resources:
           type: number
           description: "Valor em reais correspondente ao crédito inicial + alterações orçamentárias ao longo do exercício"
   - name: execucao-itens-materiais
-    type: table
     path:
       [
         data-raw/execucao-itens-materiais_2017.xlsx,
@@ -237,9 +227,7 @@ resources:
         data-raw/execucao-itens-materiais_2019-2020.xlsx,
         data-raw/execucao-itens-materiais_2021-2022.xlsx,
       ]
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -311,7 +299,6 @@ resources:
           type: number
           title: "Saldo do valor liquidado do material/serviço"
   - name: execucao
-    type: table
     path:
       [
         data-raw/execucao_2017-01.xlsx,
@@ -392,9 +379,7 @@ resources:
         data-raw/execucao_2023-04.xlsx,
         data-raw/execucao_2023-05.xlsx,
       ]
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -499,7 +484,6 @@ resources:
           description: "Valor referente aos pagamentos efetuados através de movimentações bancarias, escriturais e apropriação contábil da despesa"
           type: number
   - name: receita
-    type: table
     path:
       [
         data-raw/receita_2017.xlsx,
@@ -510,9 +494,7 @@ resources:
         data-raw/receita_2022.xlsx,
         data-raw/receita_2023.xlsx,
       ]
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -552,7 +534,6 @@ resources:
           description: "Valor, em reais, da receita orçamentária efetivada ajustada"
           type: number
   - name: restos-pagar
-    type: table
     path:
       [
         data-raw/restos-pagar_2019-01_parte-1.xlsx,
@@ -602,9 +583,7 @@ resources:
         data-raw/restos-pagar_2023-02-03.xlsx,
         data-raw/restos-pagar_2023-04-05.xlsx,
       ]
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -734,11 +713,8 @@ resources:
           type: number
           title: "Obrigação liquidada a pagar de restos"
   - name: tbl-aux_upg-desc
-    type: table
     path: data-raw/tbl-aux_upg-desc.xlsx
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -757,11 +733,8 @@ resources:
         - name: UPG_DESC
           type: string
   - name: tbl-aux_acao-desc
-    type: table
     path: data-raw/tbl-aux_acao-desc.xlsx
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -786,11 +759,8 @@ resources:
         - name: ACAO_DESC
           type: string
   - name: tbl-aux_acao-desc_rp
-    type: table
     path: data-raw/tbl-aux_acao-desc_RP.xls
-    scheme: file
     format: xls
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -817,11 +787,8 @@ resources:
         - name: ACAO_DESC
           type: string
   - name: tbl-aux_agrupamento
-    type: table
     path: data-raw/tbl-aux_agrupamento.xls
-    scheme: file
     format: xls
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -842,9 +809,7 @@ resources:
         - name: field8
           type: any
   - name: tbl-aux_elemento-item
-    type: table
     path: data-raw/tbl-aux_elemento-item.csv
-    scheme: file
     format: csv
     mediatype: text/csv
     encoding: cp1252
@@ -858,11 +823,8 @@ resources:
         - name: ELEM_ITEM_DESC
           type: string
   - name: tbl-aux_natureza-desp-desc
-    type: table
     path: data-raw/tbl-aux_natureza-desp-desc.xls
-    scheme: file
     format: xls
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -887,9 +849,7 @@ resources:
         - name: IPU_DESC
           type: string
   - name: tbl-aux_objeto-processo-siafi
-    type: table
     path: data-raw/tbl-aux_objeto-processo-siafi.csv
-    scheme: file
     format: csv
     mediatype: text/csv
     encoding: iso8859-1
@@ -900,11 +860,8 @@ resources:
         - name: Objeto Processo
           type: string
   - name: tbl-aux_obra-desc
-    type: table
     path: data-raw/tbl-aux_obra-desc.xlsx
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -913,11 +870,8 @@ resources:
         - name: OBRA_DESC
           type: string
   - name: tbl-aux_razao-social-desc
-    type: table
     path: data-raw/tbl-aux_razao-social-desc.xlsx
-    scheme: file
     format: xlsx
-    mediatype: application/vnd.ms-excel
     encoding: utf-8
     schema:
       fields:
@@ -926,9 +880,7 @@ resources:
         - name: Razão Social Credor
           type: string
   - name: tbl-aux_unidade-orcamentaria
-    type: table
     path: data-raw/tbl-aux_unidade-orcamentaria.csv
-    scheme: file
     format: csv
     mediatype: text/csv
     encoding: iso8859-1
@@ -944,12 +896,10 @@ resources:
   - name: reest_desp
     type: file
     path: data-raw/reest_desp.xlsm
-    scheme: file
     format: xlsm
     encoding: utf-8
   - name: reest_rec
     type: file
     path: data-raw/reest_desp.xlsm
-    scheme: file
     format: xlsm
     encoding: utf-8
