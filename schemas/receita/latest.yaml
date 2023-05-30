@@ -1,0 +1,40 @@
+fields:
+  - name: ANO
+    type: integer
+    title: Ano de exercício
+    description: Ano de exercício da execução orçamentária
+  - name: UO_COD
+    type: integer
+    title: Código da Unidade Orçamentária
+    description: Percentente à classificação institucional do orçamento, corresponde
+      à Unidade Administrativa contemplada com recursos orçamentários responsável
+      pela execução do orçamento
+  - name: MES
+    type: integer
+    title: Mês númerico
+  - name: CLASSIFICACAO_COD
+    type: integer
+    title: Classificação Receita - Código
+    description: Código completo da classificação econômica da receita
+  - name: CLASSIFICACAO_COD_FORMATADO
+    type: string
+    title: Classificação Receita - Formatado
+    description: Código completo formatado da classificação econômica da receita (Formato
+      9.9.9.9.99.99.99)
+  - name: CLASSIFICACAO_NOME
+    type: string
+    title: Classificação Receita - Descrição
+    description: Descrição da classificação econômica completa da receita
+  - name: FONTE_COD
+    type: integer
+    title: Código da Fonte de recursos
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: PREVISTO_INICIAL
+    type: integer
+    title: Valor Previsto Inicial
+    description: Valor, em reais, da previsão inicial da receita.
+  - name: EFETIVADO_AJUSTADO
+    type: number
+    title: Valor Efetivado Ajustado
+    description: Valor, em reais, da receita orçamentária efetivada ajustada

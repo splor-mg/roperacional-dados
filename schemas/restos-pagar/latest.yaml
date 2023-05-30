@@ -1,0 +1,141 @@
+fields:
+  - name: ANO
+    type: integer
+    title: Ano de exercício
+    description: Ano de exercício da execução orçamentária
+  - name: ANO_ORIGEM_RP
+    type: integer
+    title: Ano Origem Restos a Pagar
+    description: Ano de origem do documento de Restos a Pagar
+  - name: MES_COD
+    type: integer
+    title: Mês númerico
+  - name: UO_COD
+    type: integer
+    title: Código da Unidade Orçamentária
+    description: Percentente à classificação institucional do orçamento, corresponde
+      à Unidade Administrativa contemplada com recursos orçamentários responsável
+      pela execução do orçamento
+  - name: UE_COD
+    type: integer
+    title: Código da Unidade Executora
+    description: Unidade administrativa investida de poderes para gerir recursos orçamentários
+  - name: UO_FINAN
+    type: integer
+    title: Unid Orçam Financiadora - Código
+    description: Código da unidade financiadora da despesa orçamentária
+  - name: UPG_COD
+    type: integer
+    title: Unid Programação Gasto - Código
+    description: Código de unidade de programação de gasto relacionado com o código
+      de controle interno da unidade administrativa, de acordo com tabela elaborada
+      pela Unidade Orçamentária
+  - name: EMPENHO_NUM
+    type: integer
+  - name: FUNCAO_COD
+    type: integer
+    title: Código da Função
+    description: Pertencente à classificação funcional-programática do orçamento
+  - name: ACAO_COD
+    type: integer
+    title: Código da Ação (Projeto/Atividade)
+    description: Pertencente à classificação funcional-programática do orçamento,
+      corresponde à Ação de governo que busca atender objetivos definidos no planejamento
+      orçamentário
+  - name: GRUPO_COD
+    type: integer
+    title: Código do Grupo de Despesa
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: MODALIDADE_COD
+    type: integer
+    title: Código da Modalidade de Aplicação
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IAG_COD
+    type: integer
+    title: Código do Identificador de Ação Governamental
+    description: Classificação orçamentária que distingue as ações governamentais
+      (Projeto/Atividade) de acompanhamento intensivo das demais ações
+  - name: FONTE_COD
+    type: integer
+    title: Código da Fonte de recursos
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IPU_COD
+    type: integer
+    title: Código do Identificador de Procedência e Uso
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: CREDOR_CNPJ_CPF
+    type: string
+    title: CNPJ ou CPF formatado
+    description: CNPJ ou CPF do credor da despesa
+  - name: RAZAO_SOCIAL
+    type: string
+  - name: PROCESSO_NUMERO
+    type: string
+    title: Número Processo Compra SIAD
+    description: Número de identificação formatado do processo de compra SIAD (formato
+      UUUUUUU 999999/AAAA - Unidade de processamento, Número do processo, Ano do processo)
+  - name: CONTRATO_ENTRADA
+    type: integer
+    title: Contrato Convênio Entrada
+    description: Número atribuído pelo SIAFI-MG ao contrato/convênio de entrada cadastrado
+      no subsistema Rotina Administrativa
+  - name: OBRA_NUMERO
+    type: integer
+    title: Número Obra
+    description: Número da obra associada ao contrato/convênio de obra
+  - name: CONTRATO_NUMERO
+    type: integer
+    title: Número do contrato
+    description: Número atribuído pelo sistema SIAFI a contrato/convênio de saída
+  - name: ELEMENTO_ITEM_COD
+    type: integer
+    title: Código do Elemento Item de Despesa
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: ELEMENTO_ORIGEM_DEA_COD
+    type: integer
+    title: Elemento de despesa de origem do DEA
+  - name: ITEM_ORIGEM_DEA_COD
+    type: integer
+    title: Item de despesa de origem do DEA
+  - name: VL_INSCRITO_RPNP
+    type: integer
+    title: Valor Inscrito Não Processado
+    description: Valor, em reais, de saldo de empenhos
+  - name: VL_CANCELADO_RPNP
+    type: integer
+    title: 'Valor Cancelado Não Processado '
+    description: Valor cancelado, em reais, de empenho inscrito em Restos a Pagar
+      não processado
+  - name: VL_LIQUIDADO_RPNP
+    type: integer
+    title: Valor da despesa liquida de restos a pagar não processados
+  - name: VL_OLP_RPNP
+    type: integer
+    title: Obrigação liquidada a pagar de restos a pagar não processados
+  - name: VL_PAGO_RPNP
+    type: integer
+    title: Valor pago de restos a pagar não processados
+  - name: VL_SALDO_RPNP
+    type: integer
+    title: Saldo de restos a pagar não processados
+  - name: VL_INSCRITO_RPP_DEMAIS
+    type: number
+    title: Valor Inscrito Processado
+    description: Valor, em reais, de despesa liquidada de exercícios anteriores
+  - name: VL_CANCELADO_RPP_DEMAIS
+    type: integer
+    title: Valor cancelado de restos a pagar processados
+  - name: VL_PAGO_RPP_DEMAIS
+    type: integer
+    title: Valor pago de restos a pagar processados
+  - name: VL_OLP_RPP_DEMAIS
+    type: number
+    title: Obrigação liquidada a pagar de restos a pagar processados
+  - name: VL_OLP_RP_DEMAIS
+    type: number
+    title: Obrigação liquidada a pagar de restos

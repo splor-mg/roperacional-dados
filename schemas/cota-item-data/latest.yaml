@@ -1,0 +1,58 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    title: Ano de exercício
+    description: Ano de exercício da execução orçamentária
+  - name: Data
+    type: datetime
+    title: Data de registro da cota orçamentária
+  - name: Documento Aprovação Cota
+    type: integer
+    description: Número do documento criado no SIAFI quando do registro da cota orçamentária
+      no sistema
+  - name: UO_COD
+    type: integer
+    title: Código da Unidade Orçamentária
+    description: Percentente à classificação institucional do orçamento, corresponde
+      à Unidade Administrativa contemplada com recursos orçamentários responsável
+      pela execução do orçamento
+  - name: GRUPO_COD
+    type: integer
+    title: Código do Grupo de Despesa
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IAG_COD
+    type: integer
+    title: Código do Identificador de Ação Governamental
+    description: Classificação orçamentária que distingue as ações governamentais
+      (Projeto/Atividade) de acompanhamento intensivo das demais ações
+  - name: FONTE_COD
+    type: integer
+    title: Código da Fonte de recursos
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: IPU_COD
+    type: integer
+    title: Código do Identificador de Procedência e Uso
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: ACAO_COD
+    type: integer
+    title: Código da Ação (Projeto/Atividade)
+    description: Pertencente à classificação funcional-programática do orçamento,
+      corresponde à Ação de governo que busca atender objetivos definidos no planejamento
+      orçamentário
+  - name: ELEMENTO_ITEM_COD
+    type: integer
+    title: Código do Elemento Item de Despesa
+    description: Pertencente à classificação por natureza de despesa do orçamentário,
+      em acordo com a Lei 4320/64
+  - name: Operador - Registro
+    type: string
+    title: Responsável pelo registro da cota orçamentária no sistema SIAFI
+    description: Matrícula (MASP) do responsável pelo registro da cota orçamentária
+      no sistema SIAFI
+  - name: COTA APROVADA LIQUIDA
+    type: number
+    description: Valor líquido em reais resultante da expressão valor da cota aprovada
+      - valor anulação da cota aprovada

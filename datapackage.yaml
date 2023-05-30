@@ -1,0 +1,263 @@
+resources:
+  - name: alteracoes-orcamentarias
+    path:
+      [
+        data-raw/alteracoes_orcamentarias_2017.xlsx,
+        data-raw/alteracoes-orcamentarias_2018.xlsx,
+        data-raw/alteracoes-orcamentarias_2019.xlsx,
+        data-raw/alteracoes-orcamentarias_2020.xlsx,
+        data-raw/alteracoes-orcamentarias_2021.xlsx,
+        data-raw/alteracoes-orcamentarias_2022.xlsx,
+        data-raw/alteracoes-orcamentarias_2023.xlsx,
+      ]
+    format: xlsx
+    schema: schemas/alteracoes-orcamentarias/latest.yaml
+  - name: cota-item-data
+    path:
+      [
+        data-raw/cota-item-data_2017.xlsx,
+        data-raw/cota-item-data_2018.xlsx,
+        data-raw/cota-item-data_2019.xlsx,
+        data-raw/cota-item-data_2020.xlsx,
+        data-raw/cota-item-data_2021.xlsx,
+        data-raw/cota-item-data_2022.xlsx,
+        data-raw/cota-item-data_2023.xlsx,
+      ]
+    format: xlsx
+    schema: schemas/cota-item-data/latest.yaml
+  - name: credito-inicial-autorizado
+    path:
+      [
+        data-raw/credito-inicial-autorizado_2014-2017.xlsx,
+        data-raw/credito-inicial-autorizado_2018.xlsx,
+        data-raw/credito-inicial-autorizado_2019.xlsx,
+        data-raw/credito-inicial-autorizado_2020.xlsx,
+        data-raw/credito-inicial-autorizado_2021.xlsx,
+        data-raw/credito-inicial-autorizado_2022.xlsx,
+        data-raw/credito-inicial-autorizado_2023.xlsx,
+      ]
+    format: xlsx
+    schema: schemas/credito-inicial-autorizado/latest.yaml
+  - name: execucao-itens-materiais
+    path:
+      [
+        data-raw/execucao-itens-materiais_2017.xlsx,
+        data-raw/execucao-itens-materiais_2018.xlsx,
+        data-raw/execucao-itens-materiais_2019-2020.xlsx,
+        data-raw/execucao-itens-materiais_2021-2022.xlsx,
+      ]
+    format: xlsx
+    schema: schemas/execucao-itens-materiais/latest.yaml
+  - name: execucao
+    path:
+      [
+        data-raw/execucao_2017-01.xlsx,
+        data-raw/execucao_2017-02.xlsx,
+        data-raw/execucao_2017-03.xlsx,
+        data-raw/execucao_2017-04.xlsx,
+        data-raw/execucao_2017-05.xlsx,
+        data-raw/execucao_2017-06.xlsx,
+        data-raw/execucao_2017-07.xlsx,
+        data-raw/execucao_2017-08.xlsx,
+        data-raw/execucao_2017-09.xlsx,
+        data-raw/execucao_2017-10.xlsx,
+        data-raw/execucao_2017-11.xlsx,
+        data-raw/execucao_2017-12.xlsx,
+        data-raw/execucao_2018-01.xlsx,
+        data-raw/execucao_2018-02.xlsx,
+        data-raw/execucao_2018-03.xlsx,
+        data-raw/execucao_2018-04.xlsx,
+        data-raw/execucao_2018-05.xlsx,
+        data-raw/execucao_2018-06.xlsx,
+        data-raw/execucao_2018-07.xlsx,
+        data-raw/execucao_2018-08.xlsx,
+        data-raw/execucao_2018-09.xlsx,
+        data-raw/execucao_2018-10.xlsx,
+        data-raw/execucao_2018-11.xlsx,
+        data-raw/execucao_2018-12.xlsx,
+        data-raw/execucao_2019-01.xlsx,
+        data-raw/execucao_2019-02.xlsx,
+        data-raw/execucao_2019-03.xlsx,
+        data-raw/execucao_2019-04.xlsx,
+        data-raw/execucao_2019-05.xlsx,
+        data-raw/execucao_2019-06.xlsx,
+        data-raw/execucao_2019-07.xlsx,
+        data-raw/execucao_2019-08.xlsx,
+        data-raw/execucao_2019-09.xlsx,
+        data-raw/execucao_2019-10.xlsx,
+        data-raw/execucao_2019-11.xlsx,
+        data-raw/execucao_2019-12.xlsx,
+        data-raw/execucao_2020-01.xlsx,
+        data-raw/execucao_2020-02.xlsx,
+        data-raw/execucao_2020-03.xlsx,
+        data-raw/execucao_2020-04.xlsx,
+        data-raw/execucao_2020-05.xlsx,
+        data-raw/execucao_2020-06.xlsx,
+        data-raw/execucao_2020-07.xlsx,
+        data-raw/execucao_2020-08.xlsx,
+        data-raw/execucao_2020-09.xlsx,
+        data-raw/execucao_2020-10.xlsx,
+        data-raw/execucao_2020-11.xlsx,
+        data-raw/execucao_2020-12.xlsx,
+        data-raw/execucao_2021-01.xlsx,
+        data-raw/execucao_2021-02.xlsx,
+        data-raw/execucao_2021-03.xlsx,
+        data-raw/execucao_2021-04.xlsx,
+        data-raw/execucao_2021-05.xlsx,
+        data-raw/execucao_2021-06.xlsx,
+        data-raw/execucao_2021-07.xlsx,
+        data-raw/execucao_2021-08.xlsx,
+        data-raw/execucao_2021-09.xlsx,
+        data-raw/execucao_2021-10.xlsx,
+        data-raw/execucao_2021-11.xlsx,
+        data-raw/execucao_2021-12.xlsx,
+        data-raw/execucao_2022-01.xlsx,
+        data-raw/execucao_2022-02.xlsx,
+        data-raw/execucao_2022-03.xlsx,
+        data-raw/execucao_2022-04.xlsx,
+        data-raw/execucao_2022-05.xlsx,
+        data-raw/execucao_2022-06.xlsx,
+        data-raw/execucao_2022-07.xlsx,
+        data-raw/execucao_2022-08.xlsx,
+        data-raw/execucao_2022-09.xlsx,
+        data-raw/execucao_2022-10.xlsx,
+        data-raw/execucao_2022-11.xlsx,
+        data-raw/execucao_2022-12.xlsx,
+        data-raw/execucao_2023-01.xlsx,
+        data-raw/execucao_2023-02.xlsx,
+        data-raw/execucao_2023-03.xlsx,
+        data-raw/execucao_2023-04.xlsx,
+        data-raw/execucao_2023-05.xlsx,
+      ]
+    format: xlsx
+    schema: schemas/execucao/latest.yaml
+  - name: receita
+    path:
+      [
+        data-raw/receita_2017.xlsx,
+        data-raw/receita_2018.xlsx,
+        data-raw/receita_2019.xlsx,
+        data-raw/receita_2020.xlsx,
+        data-raw/receita_2021.xlsx,
+        data-raw/receita_2022.xlsx,
+        data-raw/receita_2023.xlsx,
+      ]
+    format: xlsx
+    schema: schemas/receita/latest.yaml
+  - name: restos-pagar
+    path:
+      [
+        data-raw/restos-pagar_2019-01_parte-1.xlsx,
+        data-raw/restos-pagar_2019-01_parte-2.xlsx,
+        data-raw/restos-pagar_2019-01_parte-3.xlsx,
+        data-raw/restos-pagar_2019-01_parte-4.xlsx,
+        data-raw/restos-pagar_2019-01_parte-5.xlsx,
+        data-raw/restos-pagar_2019-01_parte-6.xlsx,
+        data-raw/restos-pagar_2019-02.xlsx,
+        data-raw/restos-pagar_2019-03.xlsx,
+        data-raw/restos-pagar_2019-04.xlsx,
+        data-raw/restos-pagar_2019-05.xlsx,
+        data-raw/restos-pagar_2019-06.xlsx,
+        data-raw/restos-pagar_2019-07.xlsx,
+        data-raw/restos-pagar_2019-08.xlsx,
+        data-raw/restos-pagar_2019-09.xlsx,
+        data-raw/restos-pagar_2019-10.xlsx,
+        data-raw/restos-pagar_2019-11.xlsx,
+        data-raw/restos-pagar_2019-12.xlsx,
+        data-raw/restos-pagar_2020-01_parte-1.xlsx,
+        data-raw/restos-pagar_2020-01_parte-2.xlsx,
+        data-raw/restos-pagar_2020-01_parte-3.xlsx,
+        data-raw/restos-pagar_2020-02-03.xlsx,
+        data-raw/restos-pagar_2020-04-05.xlsx,
+        data-raw/restos-pagar_2020-06-07.xlsx,
+        data-raw/restos-pagar_2020-08-09.xlsx,
+        data-raw/restos-pagar_2020-10-12.xlsx,
+        data-raw/restos-pagar_2021-01_parte-1.xlsx,
+        data-raw/restos-pagar_2021-01_parte-2.xlsx,
+        data-raw/restos-pagar_2021-01_parte-3.xlsx,
+        data-raw/restos-pagar_2021-02-03.xlsx,
+        data-raw/restos-pagar_2021-04-05.xlsx,
+        data-raw/restos-pagar_2021-06-07.xlsx,
+        data-raw/restos-pagar_2021-08-09.xlsx,
+        data-raw/restos-pagar_2021-10-12.xlsx,
+        data-raw/restos-pagar_2022-01_parte-1.xlsx,
+        data-raw/restos-pagar_2022-01_parte-2.xlsx,
+        data-raw/restos-pagar_2022-01_parte-3.xlsx,
+        data-raw/restos-pagar_2022-02-03.xlsx,
+        data-raw/restos-pagar_2022-04-05.xlsx,
+        data-raw/restos-pagar_2022-06-07.xlsx,
+        data-raw/restos-pagar_2022-08-09.xlsx,
+        data-raw/restos-pagar_2022-10-12.xlsx,
+        data-raw/restos-pagar_2023-01_parte-1.xlsx,
+        data-raw/restos-pagar_2023-01_parte-2.xlsx,
+        data-raw/restos-pagar_2023-01_parte-3.xlsx,
+        data-raw/restos-pagar_2023-02-03.xlsx,
+        data-raw/restos-pagar_2023-04-05.xlsx,
+      ]
+    format: xlsx
+    schema: schemas/restos-pagar/latest.yaml
+  - name: tbl-aux_upg-desc
+    path: data-raw/tbl-aux_upg-desc.xlsx
+    format: xlsx
+    schema: schemas/tbl-aux_upg-desc/latest.yaml
+  - name: tbl-aux_acao-desc
+    path: data-raw/tbl-aux_acao-desc.xlsx
+    format: xlsx
+    schema: schemas/tbl-aux_acao-desc/latest.yaml
+  - name: tbl-aux_acao-desc_rp
+    path: data-raw/tbl-aux_acao-desc_RP.xls
+    format: xls
+    encoding: utf-8
+    schema: schemas/tbl-aux_acao-desc_rp/latest.yaml
+  - name: tbl-aux_agrupamento
+    path: data-raw/tbl-aux_agrupamento.xls
+    format: xls
+    encoding: utf-8
+    schema: schemas/tbl-aux_agrupamento/latest.yaml
+  - name: tbl-aux_elemento-item
+    path: data-raw/tbl-aux_elemento-item.csv
+    format: csv
+    mediatype: text/csv
+    encoding: cp1252
+    dialect:
+      csv:
+        delimiter: ;
+    schema: schemas/tbl-aux_elemento-item/latest.yaml
+  - name: tbl-aux_natureza-desp-desc
+    path: data-raw/tbl-aux_natureza-desp-desc.xls
+    format: xls
+    encoding: utf-8
+    schema: schemas/tbl-aux_natureza-desp-desc/latest.yaml
+  - name: tbl-aux_objeto-processo-siafi
+    path: data-raw/tbl-aux_objeto-processo-siafi.csv
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    schema: schemas/tbl-aux_objeto-processo-siafi/latest.yaml
+  - name: tbl-aux_obra-desc
+    path: data-raw/tbl-aux_obra-desc.xlsx
+    format: xlsx
+    schema: schemas/tbl-aux_obra-desc/latest.yaml
+  - name: tbl-aux_razao-social-desc
+    path: data-raw/tbl-aux_razao-social-desc.xlsx
+    format: xlsx
+    schema: schemas/tbl-aux_razao-social-desc/latest.yaml
+  - name: tbl-aux_unidade-orcamentaria
+    path: data-raw/tbl-aux_unidade-orcamentaria.csv
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema: schemas/tbl-aux_unidade-orcamentaria/latest.yaml
+  - name: reest_desp
+    type: file
+    path: data-raw/reest_desp.xlsm
+    format: xlsm
+    encoding: utf-8
+  - name: reest_rec
+    type: file
+    path: data-raw/reest_desp.xlsm
+    format: xlsm
+    encoding: utf-8

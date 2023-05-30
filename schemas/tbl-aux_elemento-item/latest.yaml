@@ -1,0 +1,5 @@
+fields:
+  - name: ELEM_ITEM_COD
+    type: integer
+  - name: ELEM_ITEM_DESC
+    type: string
