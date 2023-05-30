@@ -953,15 +953,3 @@ resources:
     scheme: file
     format: xlsm
     encoding: utf-8
-  - name: reest_desp
-    type: file
-    path: reest_rec.xlsm
-    scheme: file
-    format: xlsm
-    encoding: utf-8
-  - name: reest_rec
-    type: file
-    path: reest_desp.xlsm
-    scheme: file
-    format: xlsm
-    encoding: utf-8
